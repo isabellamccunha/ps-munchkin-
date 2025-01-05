@@ -27,9 +27,7 @@ namespace Munchkin.WinFormsApp
                 var newCardsButtons = ButtonCreator.CreateCardButton
                 (
                     $"btn_new_card_myself_{index}",
-                    card.Name,
-                    card.Description,
-                    card.Type,
+                    card,
                     startLocationX,
                    startLocationY
                 );

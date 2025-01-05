@@ -84,9 +84,7 @@ namespace Munchkin.WinFormsApp
                 var button = ButtonCreator.CreateCardButton
                 (
                     "btn_myself_cards",
-                    card.Name,
-                    card.Description,
-                    card.Type,
+                    card,
                     startLocationX,
                     startLocationY
                 );
@@ -132,9 +130,7 @@ namespace Munchkin.WinFormsApp
             _choosenButton = ButtonCreator.CreateCardButton
             (
                 "btn_choosen_card",
-                _chosenCard.Name,
-                _chosenCard.Description,
-                _chosenCard.Type,
+                _chosenCard,
                 596,
                 160
             );
