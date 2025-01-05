@@ -115,11 +115,11 @@
             // 
             lbl_card_first_player.AutoSize = true;
             lbl_card_first_player.BackColor = Color.Black;
-            lbl_card_first_player.Font = new Font("Perpetua", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_first_player.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_first_player.ForeColor = Color.NavajoWhite;
             lbl_card_first_player.Location = new Point(144, 44);
             lbl_card_first_player.Name = "lbl_card_first_player";
-            lbl_card_first_player.Size = new Size(46, 13);
+            lbl_card_first_player.Size = new Size(69, 17);
             lbl_card_first_player.TabIndex = 6;
             lbl_card_first_player.Text = "CARTAS";
             // 
@@ -127,11 +127,11 @@
             // 
             lbl_level_first_player.AutoSize = true;
             lbl_level_first_player.BackColor = Color.Black;
-            lbl_level_first_player.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_first_player.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_first_player.ForeColor = SystemColors.ControlLightLight;
             lbl_level_first_player.Location = new Point(96, 43);
             lbl_level_first_player.Name = "lbl_level_first_player";
-            lbl_level_first_player.Size = new Size(38, 14);
+            lbl_level_first_player.Size = new Size(54, 18);
             lbl_level_first_player.TabIndex = 5;
             lbl_level_first_player.Text = "NÍVEL";
             // 
@@ -139,11 +139,11 @@
             // 
             lbl_card_number_first_player.AutoSize = true;
             lbl_card_number_first_player.BackColor = Color.Black;
-            lbl_card_number_first_player.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_number_first_player.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_number_first_player.ForeColor = Color.NavajoWhite;
             lbl_card_number_first_player.Location = new Point(154, 16);
             lbl_card_number_first_player.Name = "lbl_card_number_first_player";
-            lbl_card_number_first_player.Size = new Size(23, 28);
+            lbl_card_number_first_player.Size = new Size(33, 36);
             lbl_card_number_first_player.TabIndex = 4;
             lbl_card_number_first_player.Text = "0";
             // 
@@ -151,11 +151,11 @@
             // 
             lbl_level_number_first_player.AutoSize = true;
             lbl_level_number_first_player.BackColor = Color.Black;
-            lbl_level_number_first_player.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_number_first_player.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_number_first_player.ForeColor = SystemColors.ControlLightLight;
             lbl_level_number_first_player.Location = new Point(100, 17);
             lbl_level_number_first_player.Name = "lbl_level_number_first_player";
-            lbl_level_number_first_player.Size = new Size(23, 28);
+            lbl_level_number_first_player.Size = new Size(33, 36);
             lbl_level_number_first_player.TabIndex = 3;
             lbl_level_number_first_player.Text = "1";
             // 
@@ -166,7 +166,7 @@
             lbl_space_first_player.ForeColor = SystemColors.ControlLight;
             lbl_space_first_player.Location = new Point(74, 94);
             lbl_space_first_player.Name = "lbl_space_first_player";
-            lbl_space_first_player.Size = new Size(11, 15);
+            lbl_space_first_player.Size = new Size(14, 20);
             lbl_space_first_player.TabIndex = 2;
             lbl_space_first_player.Text = "|";
             // 
@@ -177,7 +177,7 @@
             lbl_class_first_player.ForeColor = SystemColors.ControlLightLight;
             lbl_class_first_player.Location = new Point(83, 96);
             lbl_class_first_player.Name = "lbl_class_first_player";
-            lbl_class_first_player.Size = new Size(75, 15);
+            lbl_class_first_player.Size = new Size(95, 20);
             lbl_class_first_player.TabIndex = 1;
             lbl_class_first_player.Text = "SEM CLASSE";
             // 
@@ -188,7 +188,7 @@
             lbl_human_first_player.ForeColor = SystemColors.ControlLightLight;
             lbl_human_first_player.Location = new Point(13, 95);
             lbl_human_first_player.Name = "lbl_human_first_player";
-            lbl_human_first_player.Size = new Size(62, 15);
+            lbl_human_first_player.Size = new Size(79, 20);
             lbl_human_first_player.TabIndex = 0;
             lbl_human_first_player.Text = "HUMANO";
             // 
@@ -224,7 +224,7 @@
             btn_escape.Name = "btn_escape";
             btn_escape.Size = new Size(124, 36);
             btn_escape.TabIndex = 3;
-            btn_escape.Text = "TENTAR FUJIR";
+            btn_escape.Text = "TENTAR FUGIR";
             btn_escape.UseVisualStyleBackColor = false;
             btn_escape.Click += btn_escape_Click;
             // 
@@ -257,11 +257,11 @@
             // 
             lbl_card_second_player.AutoSize = true;
             lbl_card_second_player.BackColor = Color.Black;
-            lbl_card_second_player.Font = new Font("Perpetua", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_second_player.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_second_player.ForeColor = Color.NavajoWhite;
             lbl_card_second_player.Location = new Point(146, 41);
             lbl_card_second_player.Name = "lbl_card_second_player";
-            lbl_card_second_player.Size = new Size(46, 13);
+            lbl_card_second_player.Size = new Size(69, 17);
             lbl_card_second_player.TabIndex = 6;
             lbl_card_second_player.Text = "CARTAS";
             // 
@@ -269,11 +269,11 @@
             // 
             lbl_card_number_second_player.AutoSize = true;
             lbl_card_number_second_player.BackColor = Color.Black;
-            lbl_card_number_second_player.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_number_second_player.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_number_second_player.ForeColor = Color.NavajoWhite;
             lbl_card_number_second_player.Location = new Point(157, 16);
             lbl_card_number_second_player.Name = "lbl_card_number_second_player";
-            lbl_card_number_second_player.Size = new Size(23, 28);
+            lbl_card_number_second_player.Size = new Size(33, 36);
             lbl_card_number_second_player.TabIndex = 5;
             lbl_card_number_second_player.Text = "0";
             // 
@@ -281,11 +281,11 @@
             // 
             lbl_level_second_player.AutoSize = true;
             lbl_level_second_player.BackColor = Color.Black;
-            lbl_level_second_player.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_second_player.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_second_player.ForeColor = SystemColors.ControlLightLight;
             lbl_level_second_player.Location = new Point(96, 40);
             lbl_level_second_player.Name = "lbl_level_second_player";
-            lbl_level_second_player.Size = new Size(38, 14);
+            lbl_level_second_player.Size = new Size(54, 18);
             lbl_level_second_player.TabIndex = 4;
             lbl_level_second_player.Text = "NÍVEL";
             // 
@@ -293,11 +293,11 @@
             // 
             lbl_level_number_second_player.AutoSize = true;
             lbl_level_number_second_player.BackColor = Color.Black;
-            lbl_level_number_second_player.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_number_second_player.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_number_second_player.ForeColor = SystemColors.ControlLightLight;
             lbl_level_number_second_player.Location = new Point(104, 15);
             lbl_level_number_second_player.Name = "lbl_level_number_second_player";
-            lbl_level_number_second_player.Size = new Size(23, 28);
+            lbl_level_number_second_player.Size = new Size(33, 36);
             lbl_level_number_second_player.TabIndex = 3;
             lbl_level_number_second_player.Text = "1";
             // 
@@ -307,7 +307,7 @@
             lbl_class_second_player.ForeColor = SystemColors.ControlLightLight;
             lbl_class_second_player.Location = new Point(81, 96);
             lbl_class_second_player.Name = "lbl_class_second_player";
-            lbl_class_second_player.Size = new Size(75, 15);
+            lbl_class_second_player.Size = new Size(95, 20);
             lbl_class_second_player.TabIndex = 2;
             lbl_class_second_player.Text = "SEM CLASSE";
             // 
@@ -317,7 +317,7 @@
             lbl_space_second_player.ForeColor = SystemColors.ControlLightLight;
             lbl_space_second_player.Location = new Point(71, 94);
             lbl_space_second_player.Name = "lbl_space_second_player";
-            lbl_space_second_player.Size = new Size(11, 15);
+            lbl_space_second_player.Size = new Size(14, 20);
             lbl_space_second_player.TabIndex = 1;
             lbl_space_second_player.Text = "|";
             // 
@@ -327,7 +327,7 @@
             lbl_human_second_player.ForeColor = SystemColors.ControlLightLight;
             lbl_human_second_player.Location = new Point(10, 96);
             lbl_human_second_player.Name = "lbl_human_second_player";
-            lbl_human_second_player.Size = new Size(62, 15);
+            lbl_human_second_player.Size = new Size(79, 20);
             lbl_human_second_player.TabIndex = 0;
             lbl_human_second_player.Text = "HUMANO";
             // 
@@ -351,11 +351,11 @@
             // 
             lbl_card_third_player.AutoSize = true;
             lbl_card_third_player.BackColor = Color.Black;
-            lbl_card_third_player.Font = new Font("Perpetua", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_third_player.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_third_player.ForeColor = Color.NavajoWhite;
             lbl_card_third_player.Location = new Point(147, 44);
             lbl_card_third_player.Name = "lbl_card_third_player";
-            lbl_card_third_player.Size = new Size(46, 13);
+            lbl_card_third_player.Size = new Size(69, 17);
             lbl_card_third_player.TabIndex = 13;
             lbl_card_third_player.Text = "CARTAS";
             // 
@@ -363,11 +363,11 @@
             // 
             lbl_card_number_third_player.AutoSize = true;
             lbl_card_number_third_player.BackColor = Color.Black;
-            lbl_card_number_third_player.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_number_third_player.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_number_third_player.ForeColor = Color.NavajoWhite;
             lbl_card_number_third_player.Location = new Point(157, 19);
             lbl_card_number_third_player.Name = "lbl_card_number_third_player";
-            lbl_card_number_third_player.Size = new Size(23, 28);
+            lbl_card_number_third_player.Size = new Size(33, 36);
             lbl_card_number_third_player.TabIndex = 12;
             lbl_card_number_third_player.Text = "0";
             // 
@@ -375,11 +375,11 @@
             // 
             lbl_level_third_player.AutoSize = true;
             lbl_level_third_player.BackColor = Color.Black;
-            lbl_level_third_player.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_third_player.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_third_player.ForeColor = SystemColors.ControlLightLight;
             lbl_level_third_player.Location = new Point(98, 43);
             lbl_level_third_player.Name = "lbl_level_third_player";
-            lbl_level_third_player.Size = new Size(38, 14);
+            lbl_level_third_player.Size = new Size(54, 18);
             lbl_level_third_player.TabIndex = 11;
             lbl_level_third_player.Text = "NÍVEL";
             // 
@@ -387,11 +387,11 @@
             // 
             lbl_level_number_third_player.AutoSize = true;
             lbl_level_number_third_player.BackColor = Color.Black;
-            lbl_level_number_third_player.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_number_third_player.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_number_third_player.ForeColor = SystemColors.ControlLightLight;
             lbl_level_number_third_player.Location = new Point(104, 19);
             lbl_level_number_third_player.Name = "lbl_level_number_third_player";
-            lbl_level_number_third_player.Size = new Size(23, 28);
+            lbl_level_number_third_player.Size = new Size(33, 36);
             lbl_level_number_third_player.TabIndex = 10;
             lbl_level_number_third_player.Text = "1";
             // 
@@ -401,7 +401,7 @@
             lbl_class_third_player.ForeColor = SystemColors.ControlLightLight;
             lbl_class_third_player.Location = new Point(78, 96);
             lbl_class_third_player.Name = "lbl_class_third_player";
-            lbl_class_third_player.Size = new Size(75, 15);
+            lbl_class_third_player.Size = new Size(95, 20);
             lbl_class_third_player.TabIndex = 9;
             lbl_class_third_player.Text = "SEM CLASSE";
             // 
@@ -411,7 +411,7 @@
             lbl_space_third_player.ForeColor = SystemColors.ControlLightLight;
             lbl_space_third_player.Location = new Point(69, 95);
             lbl_space_third_player.Name = "lbl_space_third_player";
-            lbl_space_third_player.Size = new Size(11, 15);
+            lbl_space_third_player.Size = new Size(14, 20);
             lbl_space_third_player.TabIndex = 8;
             lbl_space_third_player.Text = "|";
             // 
@@ -421,7 +421,7 @@
             lbl_human_third_player.ForeColor = SystemColors.ControlLightLight;
             lbl_human_third_player.Location = new Point(9, 96);
             lbl_human_third_player.Name = "lbl_human_third_player";
-            lbl_human_third_player.Size = new Size(62, 15);
+            lbl_human_third_player.Size = new Size(79, 20);
             lbl_human_third_player.TabIndex = 7;
             lbl_human_third_player.Text = "HUMANO";
             // 
@@ -454,11 +454,11 @@
             // 
             lbl_card_myself.AutoSize = true;
             lbl_card_myself.BackColor = Color.Black;
-            lbl_card_myself.Font = new Font("Perpetua", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_myself.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_myself.ForeColor = Color.NavajoWhite;
             lbl_card_myself.Location = new Point(141, 38);
             lbl_card_myself.Name = "lbl_card_myself";
-            lbl_card_myself.Size = new Size(46, 13);
+            lbl_card_myself.Size = new Size(69, 17);
             lbl_card_myself.TabIndex = 15;
             lbl_card_myself.Text = "CARTAS";
             // 
@@ -466,11 +466,11 @@
             // 
             lbl_card_number_myself.AutoSize = true;
             lbl_card_number_myself.BackColor = Color.Black;
-            lbl_card_number_myself.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_card_number_myself.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_card_number_myself.ForeColor = Color.NavajoWhite;
             lbl_card_number_myself.Location = new Point(152, 13);
             lbl_card_number_myself.Name = "lbl_card_number_myself";
-            lbl_card_number_myself.Size = new Size(23, 28);
+            lbl_card_number_myself.Size = new Size(33, 36);
             lbl_card_number_myself.TabIndex = 14;
             lbl_card_number_myself.Text = "0";
             // 
@@ -478,11 +478,11 @@
             // 
             lbl_level_myself.AutoSize = true;
             lbl_level_myself.BackColor = Color.Black;
-            lbl_level_myself.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_myself.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_myself.ForeColor = SystemColors.ControlLightLight;
             lbl_level_myself.Location = new Point(89, 36);
             lbl_level_myself.Name = "lbl_level_myself";
-            lbl_level_myself.Size = new Size(38, 14);
+            lbl_level_myself.Size = new Size(54, 18);
             lbl_level_myself.TabIndex = 13;
             lbl_level_myself.Text = "NÍVEL";
             // 
@@ -490,11 +490,11 @@
             // 
             lbl_level_number_myself.AutoSize = true;
             lbl_level_number_myself.BackColor = Color.Black;
-            lbl_level_number_myself.Font = new Font("Perpetua", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_level_number_myself.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_level_number_myself.ForeColor = SystemColors.ControlLightLight;
             lbl_level_number_myself.Location = new Point(96, 13);
             lbl_level_number_myself.Name = "lbl_level_number_myself";
-            lbl_level_number_myself.Size = new Size(23, 28);
+            lbl_level_number_myself.Size = new Size(33, 36);
             lbl_level_number_myself.TabIndex = 12;
             lbl_level_number_myself.Text = "1";
             // 
@@ -504,7 +504,7 @@
             lbl_class_myself.ForeColor = SystemColors.ControlLightLight;
             lbl_class_myself.Location = new Point(80, 101);
             lbl_class_myself.Name = "lbl_class_myself";
-            lbl_class_myself.Size = new Size(75, 15);
+            lbl_class_myself.Size = new Size(95, 20);
             lbl_class_myself.TabIndex = 11;
             lbl_class_myself.Text = "SEM CLASSE";
             // 
@@ -514,7 +514,7 @@
             lbl_space_myself.ForeColor = SystemColors.ControlLightLight;
             lbl_space_myself.Location = new Point(71, 99);
             lbl_space_myself.Name = "lbl_space_myself";
-            lbl_space_myself.Size = new Size(11, 15);
+            lbl_space_myself.Size = new Size(14, 20);
             lbl_space_myself.TabIndex = 10;
             lbl_space_myself.Text = "|";
             // 
@@ -524,7 +524,7 @@
             lbl_human_myself.ForeColor = SystemColors.ControlLightLight;
             lbl_human_myself.Location = new Point(11, 100);
             lbl_human_myself.Name = "lbl_human_myself";
-            lbl_human_myself.Size = new Size(62, 15);
+            lbl_human_myself.Size = new Size(79, 20);
             lbl_human_myself.TabIndex = 9;
             lbl_human_myself.Text = "HUMANO";
             // 
@@ -540,11 +540,11 @@
             // lbl_myself
             // 
             lbl_myself.AutoSize = true;
-            lbl_myself.Font = new Font("Perpetua", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_myself.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_myself.ForeColor = Color.NavajoWhite;
             lbl_myself.Location = new Point(90, 408);
             lbl_myself.Name = "lbl_myself";
-            lbl_myself.Size = new Size(48, 18);
+            lbl_myself.Size = new Size(74, 25);
             lbl_myself.TabIndex = 8;
             lbl_myself.Text = "VOCÊ";
             // 
@@ -625,12 +625,12 @@
             lbl_dice.ForeColor = SystemColors.ControlLight;
             lbl_dice.Location = new Point(614, 211);
             lbl_dice.Name = "lbl_dice";
-            lbl_dice.Size = new Size(0, 15);
+            lbl_dice.Size = new Size(0, 20);
             lbl_dice.TabIndex = 35;
             // 
             // MatchForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(903, 466);
