@@ -6,8 +6,9 @@ namespace Munchkin.Domain.Entities
     {
         public List<Player> Players { get; set; }
         public Deck Deck { get; set; }
+        private static Match instance;
 
-        public Match()
+        private Match()
         {
             Players = new List<Player>();
             Deck = new Deck();
@@ -32,6 +33,15 @@ namespace Munchkin.Domain.Entities
                     deck.Cards.RemoveAt(cardIndex);
                 }
             }
+        }
+
+        public static Match getInstance()
+        {
+            if(instance == null)
+            {
+                instance = new Match();
+            }
+            return instance;
         }
     }
 }

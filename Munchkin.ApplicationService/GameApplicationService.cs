@@ -6,7 +6,7 @@ namespace Munchkin.ApplicationService
     {
         public Match InitializeGame()
         {            
-            var match = new Match();
+            var match = Match.getInstance();
             match.Initialize(Player.CreatePlayers(), new Deck());
 
             return match;
