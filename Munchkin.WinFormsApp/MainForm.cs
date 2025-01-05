@@ -23,7 +23,7 @@ namespace Munchkin.WinFormsApp
 
         private void PlaySound()
         {
-            _soundPlayerInitialGame.PlayLooping();
+            //_soundPlayerInitialGame.PlayLooping();
         }
 
         private void StopSound()
@@ -37,7 +37,7 @@ namespace Munchkin.WinFormsApp
 
             // TOOD: Colocar o caminho dentro da aplicação
             SoundPlayer clickSound = new SoundPlayer("C:/Users/imaud/Music/click_sound.wav");
-            clickSound.Play();
+            //clickSound.Play();
 
             MatchForm matchForm = new MatchForm();
             matchForm.ShowDialog();

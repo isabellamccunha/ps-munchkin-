@@ -7,6 +7,7 @@ namespace Munchkin.Domain.Entities
         public List<Player> Players { get; set; }
         public Deck Deck { get; set; }
         private static Match instance;
+        private Turn turn { get; set; }
 
         private Match()
         {

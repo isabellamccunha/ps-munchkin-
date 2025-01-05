@@ -10,6 +10,8 @@ namespace Munchkin.Domain.Entities
             Type = type;
             Level = 1;
             Cards = new List<Card>();
+            Hand = new Hand();
+            Backpack = new Backpack();
         }
 
         public static List<Player> CreatePlayers()
@@ -27,6 +29,8 @@ namespace Munchkin.Domain.Entities
         public string Type { get; private set; }
         public int Level { get; private set; }
         public List<Card> Cards { get; private set; }
+        private Hand Hand { get; set; }
+        public Backpack Backpack { get; private set; }
 
         public void AddCard(Card card)
         {
