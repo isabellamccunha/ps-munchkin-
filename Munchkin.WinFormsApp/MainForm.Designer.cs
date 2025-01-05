@@ -77,11 +77,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(682, 388);
+            ClientSize = new Size(688, 391);
             Controls.Add(btn_sound);
             Controls.Add(btn_amigos);
             Controls.Add(btn_bot);
             Cursor = Cursors.Hand;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
             Text = "start";
             Load += MainForm_Load;

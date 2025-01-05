@@ -9,7 +9,7 @@ namespace Munchkin.WinFormsApp
 
         public MainForm()
         {
-            InitializeComponent();           
+            InitializeComponent();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -17,8 +17,8 @@ namespace Munchkin.WinFormsApp
             _sound = true;
 
             // TOOD: Colocar o caminho dentro da aplicação
-            _soundPlayerInitialGame = new SoundPlayer("C:/Users/imaud/Music/start_sound.wav");
-            PlaySound();
+            //_soundPlayerInitialGame = new SoundPlayer("C:/Users/imaud/Music/start_sound.wav");
+            //PlaySound();
         }
 
         private void PlaySound()
@@ -36,8 +36,8 @@ namespace Munchkin.WinFormsApp
             this.Hide();
 
             // TOOD: Colocar o caminho dentro da aplicação
-            SoundPlayer clickSound = new SoundPlayer("C:/Users/imaud/Music/click_sound.wav");
-            clickSound.Play();
+            // SoundPlayer clickSound = new SoundPlayer("C:/Users/imaud/Music/click_sound.wav");
+            //clickSound.Play();
 
             MatchForm matchForm = new MatchForm();
             matchForm.ShowDialog();
@@ -49,13 +49,13 @@ namespace Munchkin.WinFormsApp
             {
                 _sound = false;
                 ChangeSoundButtonOff();
-                StopSound();
+                //StopSound();
             }
             else
             {
                 _sound = true;
                 ChangeSoundButtonOn();
-                PlaySound();
+                //PlaySound();
             }
         }
 

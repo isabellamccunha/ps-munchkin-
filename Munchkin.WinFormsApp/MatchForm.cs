@@ -1,9 +1,8 @@
-﻿using System;
-using System.Media;
-using Munchkin.ApplicationService;
+﻿using Munchkin.ApplicationService;
 using Munchkin.Domain.Entities;
 using Munchkin.Domain.Shared.Abstractions;
 using Munchkin.WinFormsApp.Utils;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Munchkin.WinFormsApp
 {
@@ -13,6 +12,8 @@ namespace Munchkin.WinFormsApp
         private Match _match;
 
         private Card _chosenCard;
+        private Card _clickCard;
+
         private Backpack _backpack;
 
         private Button _choosenButton;
@@ -20,6 +21,7 @@ namespace Munchkin.WinFormsApp
         public MatchForm()
         {
             InitializeComponent();
+
 
             HideCards();
 
@@ -39,6 +41,22 @@ namespace Munchkin.WinFormsApp
             ChangeCardNumbers();
 
             btn_open_door.Show();
+
+            DisableBackButton();
+        }
+
+        public void DisableBackButton()
+        {
+            btn_back.Enabled = false;
+            btn_back.BackColor = Color.Gray;
+            btn_back.ForeColor = Color.DarkGray;
+        }
+
+        public void EnableBackButton()
+        {
+            btn_back.Enabled = true;
+            btn_back.BackColor = Color.AliceBlue;
+            btn_back.ForeColor = Color.Black;
         }
 
         private void HideCards()
@@ -81,6 +99,7 @@ namespace Munchkin.WinFormsApp
 
             foreach (var card in cards)
             {
+
                 var button = ButtonCreator.CreateCardButton
                 (
                     "btn_myself_cards",
@@ -93,6 +112,7 @@ namespace Munchkin.WinFormsApp
 
                 this.Controls.Add(button);
 
+
                 startLocationX += 81;
 
                 if ((startLocationX - 226) / 77 >= 4)
@@ -101,6 +121,7 @@ namespace Munchkin.WinFormsApp
                     startLocationY += 130;
                 }
             }
+
         }
 
 
@@ -121,6 +142,8 @@ namespace Munchkin.WinFormsApp
                     lbl_class_myself.Text = card.Name.ToUpper();
                 }
             }
+
+            _clickCard = card;
         }
 
         private void btn_open_door_Click(object sender, EventArgs e)
@@ -163,7 +186,7 @@ namespace Munchkin.WinFormsApp
 
         private void btn_curse_MouseEnter(object sender, EventArgs e)
         {
-            PlayMouseEnter();
+            //PlayMouseEnter();
         }
 
         private void btn_monster_MouseEnter(object sender, EventArgs e)
@@ -173,19 +196,19 @@ namespace Munchkin.WinFormsApp
 
         private void btn_treasure_MouseEnter(object sender, EventArgs e)
         {
-            PlayMouseEnter();
+            //PlayMouseEnter();
         }
 
         private void btn_class_MouseEnter(object sender, EventArgs e)
         {
-            PlayMouseEnter();
+            //PlayMouseEnter();
         }
 
         private void PlayMouseEnter()
         {
             // TOOD: Colocar o caminho dentro da aplicação
-            SoundPlayer clickSound = new SoundPlayer("C:/Users/imaud/Music/click_sound.wav");
-            clickSound.Play();
+            // SoundPlayer clickSound = new SoundPlayer("C:/Users/imaud/Music/click_sound.wav");
+            //clickSound.Play();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -238,7 +261,7 @@ namespace Munchkin.WinFormsApp
             var level = int.Parse(lbl_level_number_myself.Text);
 
 
-            if (number == 6 || number == 5) 
+            if (number == 6 || number == 5)
             {
                 MessageBox.Show($"Número sorteado: {number} :: Você venceu o combate!! Subiu um nível!");
                 level++;
@@ -246,10 +269,10 @@ namespace Munchkin.WinFormsApp
             else
             {
                 MessageBox.Show($"Número sorteado: {number} :: Você perdeu o combate!! Desceu um nível!");
-                
-                if(level != 1)
+
+                if (level != 1)
                 {
-                    level--;                   
+                    level--;
                 }
             }
 
@@ -270,7 +293,31 @@ namespace Munchkin.WinFormsApp
 
         private void btn_attack_Click(object sender, EventArgs e)
         {
+            if (_clickCard is null || _clickCard.Type != "Monstro")
+            {
+                MessageBox.Show("Você deve escolher uma carta do tipo Monstro para poder atacar!");
+            }
+            else
+            {
+                // TODO: Concentrar lógica em um método para ser reutilizável (Lógica repetida)
+                var level = int.Parse(lbl_level_number_myself.Text);
+                if (_clickCard.Power > _chosenCard.Power)
+                {
+                    MessageBox.Show($"Seu monstro é mais poderoso!! Você subiu um nível");
+                    level++;
+                }
+                else
+                {
+                    if (level != 1)
+                    {
+                        MessageBox.Show($"Seu monstro perdeu!! Você desceu um nível");
+                        level--;
+                    }
+                }
 
+                lbl_level_number_myself.Text = level.ToString();
+                // adicionar carta a mochila, esconder carta e aparecer com a mochila
+            }
         }
 
         private void HideMonsterButtons()
@@ -278,6 +325,14 @@ namespace Munchkin.WinFormsApp
             btn_escape.Hide();
             btn_help.Hide();
             btn_attack.Hide();
+        }
+
+        private void btn_back_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var mainForm = new MainForm();
+            mainForm.ShowDialog();
         }
     }
 }

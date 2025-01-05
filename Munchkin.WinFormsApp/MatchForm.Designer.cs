@@ -76,6 +76,7 @@
             btn_backpack = new Button();
             btn_dice = new Button();
             lbl_dice = new Label();
+            btn_back = new Button();
             gb_first_player.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)img_first_player).BeginInit();
             gb_second_player.SuspendLayout();
@@ -603,9 +604,9 @@
             btn_backpack.BackColor = Color.FromArgb(64, 0, 0);
             btn_backpack.BackgroundImage = (Image)resources.GetObject("btn_backpack.BackgroundImage");
             btn_backpack.ForeColor = SystemColors.ControlLightLight;
-            btn_backpack.Location = new Point(527, 419);
+            btn_backpack.Location = new Point(566, 419);
             btn_backpack.Name = "btn_backpack";
-            btn_backpack.Size = new Size(34, 35);
+            btn_backpack.Size = new Size(32, 36);
             btn_backpack.TabIndex = 33;
             btn_backpack.UseVisualStyleBackColor = false;
             btn_backpack.Click += btn_backpack_Click;
@@ -628,12 +629,25 @@
             lbl_dice.Size = new Size(0, 15);
             lbl_dice.TabIndex = 35;
             // 
+            // btn_back
+            // 
+            btn_back.BackColor = Color.AliceBlue;
+            btn_back.ForeColor = SystemColors.Desktop;
+            btn_back.Location = new Point(777, 27);
+            btn_back.Name = "btn_back";
+            btn_back.Size = new Size(112, 39);
+            btn_back.TabIndex = 36;
+            btn_back.Text = "VOLTAR";
+            btn_back.UseVisualStyleBackColor = false;
+            btn_back.Click += btn_back_Click_1;
+            // 
             // MatchForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
-            ClientSize = new Size(903, 466);
+            ClientSize = new Size(901, 467);
+            Controls.Add(btn_back);
             Controls.Add(lbl_dice);
             Controls.Add(btn_dice);
             Controls.Add(btn_backpack);
@@ -650,6 +664,7 @@
             Controls.Add(btn_attack);
             Controls.Add(gb_first_player);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MatchForm";
             Text = "MatchForm";
             Load += MatchForm_Load;
@@ -718,5 +733,6 @@
         private Button btn_backpack;
         private Button btn_dice;
         private Label lbl_dice;
+        private Button btn_back;
     }
 }

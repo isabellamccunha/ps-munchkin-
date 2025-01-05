@@ -9,7 +9,7 @@ namespace Munchkin.WinFormsApp.Utils
             var button = new Button
             {
                 Name = buttonName,
-                Size = new Size(79, 127),
+                Size = new Size(79, 127),               
                 Location = new Point(locationX, locationY),
                 BackColor = Color.Bisque,
                 ForeColor = Color.SaddleBrown,
@@ -26,12 +26,12 @@ namespace Munchkin.WinFormsApp.Utils
             var rewardLabel = CreateRewardCard(card.Reward);
 
             var damageLabel = CreateDemageCard(card.Damage);
-
+            
             button.Controls.Add(titleLabel);
             button.Controls.Add(powerLabel);
             button.Controls.Add(rewardLabel);
             button.Controls.Add(damageLabel);
-
+           
             return button;
         }
 
