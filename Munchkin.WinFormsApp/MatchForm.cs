@@ -235,15 +235,25 @@ namespace Munchkin.WinFormsApp
 
             var number = random.Next(1, 7);
 
-            
+            var level = int.Parse(lbl_level_number_myself.Text);
+
+
             if (number == 6 || number == 5) 
             {
-                MessageBox.Show($"Número sorteado: {number} :: Você venceu o combate!!");
+                MessageBox.Show($"Número sorteado: {number} :: Você venceu o combate!! Subiu um nível!");
+                level++;
             }
             else
             {
-                MessageBox.Show($"Número sorteado: {number} :: Você perdeu o combate!!");
+                MessageBox.Show($"Número sorteado: {number} :: Você perdeu o combate!! Desceu um nível!");
+                
+                if(level != 1)
+                {
+                    level--;                   
+                }
             }
+
+            lbl_level_number_myself.Text = level.ToString();
 
             lbl_dice.Hide();
             btn_dice.Hide();
