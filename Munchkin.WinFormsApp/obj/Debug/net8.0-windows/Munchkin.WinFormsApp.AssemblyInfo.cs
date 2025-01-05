@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Munchkin.WinFormsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc3954fd309ebc87701cafa61ddd3f0c1288be86")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fdeef75e916bf545136206c5269931d245105ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Munchkin.WinFormsApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Munchkin.WinFormsApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

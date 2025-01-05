@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Faculdade\\Munchkin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\utils\\buttoncreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\utils\\buttoncreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -21,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,62 +26,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ButtonCreator.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T21:23:10.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MatchForm.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.cs",
-              "ViewState": "AQIAABkBAAAAAAAAAAAcwCcBAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T20:04:34.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MatchForm.cs [Design]",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
               "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs [Design]",
               "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T20:01:59.535Z",
+              "WhenOpened": "2025-01-05T21:48:45.004Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Match.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Entities\\Match.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAnwCoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T21:45:38.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Program.cs",
               "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\Program.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Program.cs",
               "RelativeToolTip": "Munchkin.WinFormsApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T20:01:36.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MainForm.cs",
               "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MainForm.cs",
