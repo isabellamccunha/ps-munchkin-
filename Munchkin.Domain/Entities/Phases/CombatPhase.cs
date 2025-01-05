@@ -9,5 +9,9 @@ namespace Munchkin.Domain.Entities.Phases
 {
     internal class CombatPhase : Phase
     {
+        public override void Execute()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

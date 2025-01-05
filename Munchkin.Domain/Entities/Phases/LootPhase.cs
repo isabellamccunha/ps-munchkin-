@@ -9,5 +9,9 @@ namespace Munchkin.Domain.Entities.Phases
 {
     internal class LootPhase : Phase
     {
+        public override void Execute()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -9,5 +9,9 @@ namespace Munchkin.Domain.Entities.Phases
 {
     internal class KickTheDoorPhase : Phase
     {
+        public override void Execute()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
