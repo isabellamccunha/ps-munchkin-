@@ -7,40 +7,20 @@
       "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DA76013-C430-4C98-BBFC-98BD78B25C04}|Munchkin.ApplicationService\\Munchkin.ApplicationService.csproj|c:\\faculdade\\munchkin\\munchkin.applicationservice\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA76013-C430-4C98-BBFC-98BD78B25C04}|Munchkin.ApplicationService\\Munchkin.ApplicationService.csproj|solutionrelative:munchkin.applicationservice\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\backpackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\backpackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\matchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\munchkin.winformsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\munchkin.winformsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\backpackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\backpackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,44 +30,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MainForm.cs",
               "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MainForm.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MainForm.cs [Design]",
               "RelativeToolTip": "Munchkin.WinFormsApp\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T23:20:53.35Z",
+              "WhenOpened": "2025-01-05T01:09:29.628Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameApplicationService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.ApplicationService\\GameApplicationService.cs",
-              "RelativeDocumentMoniker": "Munchkin.ApplicationService\\GameApplicationService.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.ApplicationService\\GameApplicationService.cs",
-              "RelativeToolTip": "Munchkin.ApplicationService\\GameApplicationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "DocumentIndex": 4,
+              "Title": "BackpackForm.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\BackpackForm.cs",
+              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\BackpackForm.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\BackpackForm.cs",
+              "RelativeToolTip": "Munchkin.WinFormsApp\\BackpackForm.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T22:40:00.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Player.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Player.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Player.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T22:43:14.952Z",
+              "WhenOpened": "2025-01-05T01:02:46.31Z",
               "EditorCaption": ""
             },
             {
@@ -98,7 +65,7 @@
               "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
               "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAxwK4AAAAhAAAA",
+              "ViewState": "AQIAANsAAAAAAAAAAAAgwAABAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T21:07:46.927Z",
               "EditorCaption": ""
@@ -117,66 +84,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Deck.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Deck.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Deck.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Deck.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Deck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "DocumentIndex": 2,
+              "Title": "BackpackForm.cs [Design]",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\BackpackForm.cs",
+              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\BackpackForm.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\BackpackForm.cs [Design]",
+              "RelativeToolTip": "Munchkin.WinFormsApp\\BackpackForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T19:25:14.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Match.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Match.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Match.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwB8AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T22:48:41.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MatchForm.Designer.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.Designer.cs",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.Designer.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.Designer.cs",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.Designer.cs",
-              "ViewState": "AQIAAB8CAAAAAAAAAAArwE0CAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T03:29:09.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Monster.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T02:56:54.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Munchkin.WinFormsApp.csproj",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-04T03:22:51.233Z"
+              "WhenOpened": "2025-01-05T01:16:54.798Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

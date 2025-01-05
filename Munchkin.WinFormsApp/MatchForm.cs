@@ -1,7 +1,9 @@
-﻿using System.Media;
+﻿using System;
+using System.Media;
 using Munchkin.ApplicationService;
 using Munchkin.Domain.Entities;
 using Munchkin.Domain.Shared.Abstractions;
+using Munchkin.WinFormsApp.Utils;
 
 namespace Munchkin.WinFormsApp
 {
@@ -10,6 +12,11 @@ namespace Munchkin.WinFormsApp
         private GameApplicationService _gameApplicationService;
         private Match _match;
 
+        private Card _chosenCard;
+        private Backpack _backpack;
+
+        private Button _choosenButton;
+
         public MatchForm()
         {
             InitializeComponent();
@@ -17,6 +24,7 @@ namespace Munchkin.WinFormsApp
             HideCards();
 
             _gameApplicationService = new GameApplicationService();
+            _backpack = new Backpack();
         }
 
         private void btn_initialize_match_Click(object sender, EventArgs e)
@@ -37,10 +45,12 @@ namespace Munchkin.WinFormsApp
         {
             btn_attack.Hide();
             btn_help.Hide();
-            btn_escape.Hide();            
+            btn_escape.Hide();
             btn_open_door.Hide();
             btn_add.Hide();
             btn_delete.Hide();
+            btn_backpack.Hide();
+            btn_dice.Hide();
         }
 
         private void ChangeCardNumbers()
@@ -71,8 +81,9 @@ namespace Munchkin.WinFormsApp
 
             foreach (var card in cards)
             {
-                var button = CreateCardButton
+                var button = ButtonCreator.CreateCardButton
                 (
+                    "btn_myself_cards",
                     card.Name,
                     card.Description,
                     card.Type,
@@ -94,56 +105,6 @@ namespace Munchkin.WinFormsApp
             }
         }
 
-        private Button CreateCardButton(string cardName, string cardDescription, string cardType, int locationX, int locationY)
-        {
-            var button = new Button
-            {
-                Size = new Size(79, 127),
-                Location = new Point(locationX, locationY),
-                BackColor = Color.Bisque,
-                ForeColor = Color.SaddleBrown,
-                Text = cardName,
-                TextAlign = ContentAlignment.MiddleCenter,
-                Font = new Font("Perpetua", 8, FontStyle.Bold),
-                FlatStyle = FlatStyle.Flat
-            };
-
-            var titleLabel = CreateTitleCard(cardType);
-
-            var descriptionLabel = CreateDescriptionCard(cardDescription);
-
-            button.Controls.Add(titleLabel);
-            button.Controls.Add(descriptionLabel);
-
-            return button;
-        }
-
-        private Label CreateTitleCard(string cardType)
-        {
-            return new Label
-            {
-                Text = cardType,
-                TextAlign = ContentAlignment.TopCenter,
-                Font = new Font("Perpetua", 8, FontStyle.Bold),
-                ForeColor = Color.DarkGoldenrod,
-                Location = new Point(14, 5),
-                AutoSize = true,
-                BackColor = Color.Transparent
-            };
-        }
-
-        private Label CreateDescriptionCard(string cardDescription)
-        {
-            return new Label
-            {
-                Text = cardDescription,
-                Font = new Font("Perpetua", 8, FontStyle.Bold),
-                ForeColor = Color.SaddleBrown,
-                Location = new Point(5, 150),
-                AutoSize = true,
-                BackColor = Color.Transparent
-            };
-        }
 
         private void Button_Click(object sender, EventArgs e, Card card)
         {
@@ -166,13 +127,22 @@ namespace Munchkin.WinFormsApp
 
         private void btn_open_door_Click(object sender, EventArgs e)
         {
-            var chosenCard = _match.Deck.ChooseCard();
+            _chosenCard = _match.Deck.ChooseCard();
 
-            var button = CreateCardButton(chosenCard.Name, chosenCard.Description, chosenCard.Type, 596, 160);
-            this.Controls.Add(button);
+            _choosenButton = ButtonCreator.CreateCardButton
+            (
+                "btn_choosen_card",
+                _chosenCard.Name,
+                _chosenCard.Description,
+                _chosenCard.Type,
+                596,
+                160
+            );
+
+            this.Controls.Add(_choosenButton);
 
             btn_open_door.Hide();
-            if (chosenCard.Type == "Monstro")
+            if (_chosenCard.Type == "Monstro")
             {
                 btn_attack.Show();
                 btn_help.Show();
@@ -228,6 +198,80 @@ namespace Munchkin.WinFormsApp
 
             MainForm mainForm = new MainForm();
             mainForm.ShowDialog();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            _backpack.AddNewCard(_chosenCard);
+
+            var totalCards = int.Parse(lbl_card_number_myself.Text) + 1;
+            lbl_card_number_myself.Text = totalCards.ToString();
+
+            btn_add.Hide();
+            btn_delete.Hide();
+
+            _choosenButton.Hide();
+
+            btn_open_door.Show();
+            btn_backpack.Show();
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            _choosenButton.Hide();
+            btn_add.Hide();
+            btn_delete.Hide();
+            btn_open_door.Show();
+        }
+
+        private void btn_backpack_Click(object sender, EventArgs e)
+        {
+            var backpack = new BackpackForm(_backpack);
+            backpack.ShowDialog();
+        }
+
+        private void btn_escape_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Rolando dado...");
+            btn_dice.Show();
+
+            Random random = new Random();
+
+            var number = random.Next(1, 7);
+
+            
+            if (number == 6 || number == 5) 
+            {
+                MessageBox.Show($"Número sorteado: {number} :: Você venceu o combate!!");
+            }
+            else
+            {
+                MessageBox.Show($"Número sorteado: {number} :: Você perdeu o combate!!");
+            }
+
+            lbl_dice.Hide();
+            btn_dice.Hide();
+            HideMonsterButtons();
+
+            btn_open_door.Show();
+            _choosenButton.Hide();
+        }
+
+        private void btn_help_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_attack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HideMonsterButtons()
+        {
+            btn_escape.Hide();
+            btn_help.Hide();
+            btn_attack.Hide();
         }
     }
 }

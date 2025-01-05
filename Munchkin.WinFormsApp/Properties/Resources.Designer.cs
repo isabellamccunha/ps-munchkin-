@@ -63,6 +63,16 @@ namespace Munchkin.WinFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backpack {
+            get {
+                object obj = ResourceManager.GetObject("backpack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bomba {
             get {
                 object obj = ResourceManager.GetObject("bomba", resourceCulture);
@@ -106,6 +116,16 @@ namespace Munchkin.WinFormsApp.Properties {
         internal static System.Drawing.Bitmap Captura_de_tela_2025_01_03_173741 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2025-01-03 173741", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dado {
+            get {
+                object obj = ResourceManager.GetObject("dado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

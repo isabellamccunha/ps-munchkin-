@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchForm));
             gb_first_player = new GroupBox();
             img_first_player = new PictureBox();
             lbl_card_first_player = new Label();
@@ -72,6 +73,9 @@
             btn_open_door = new Button();
             btn_add = new Button();
             btn_delete = new Button();
+            btn_backpack = new Button();
+            btn_dice = new Button();
+            lbl_dice = new Label();
             gb_first_player.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)img_first_player).BeginInit();
             gb_second_player.SuspendLayout();
@@ -198,6 +202,7 @@
             btn_attack.TabIndex = 1;
             btn_attack.Text = "ATACAR";
             btn_attack.UseVisualStyleBackColor = false;
+            btn_attack.Click += btn_attack_Click;
             // 
             // btn_help
             // 
@@ -209,6 +214,7 @@
             btn_help.TabIndex = 2;
             btn_help.Text = "PEDIR AJUDA";
             btn_help.UseVisualStyleBackColor = false;
+            btn_help.Click += btn_help_Click;
             // 
             // btn_escape
             // 
@@ -220,6 +226,7 @@
             btn_escape.TabIndex = 3;
             btn_escape.Text = "TENTAR FUJIR";
             btn_escape.UseVisualStyleBackColor = false;
+            btn_escape.Click += btn_escape_Click;
             // 
             // gb_second_player
             // 
@@ -569,23 +576,57 @@
             // 
             btn_add.BackColor = Color.FromArgb(64, 0, 0);
             btn_add.ForeColor = SystemColors.ControlLightLight;
-            btn_add.Location = new Point(765, 159);
+            btn_add.Location = new Point(766, 159);
             btn_add.Name = "btn_add";
             btn_add.Size = new Size(124, 37);
             btn_add.TabIndex = 31;
             btn_add.Text = "GUARDAR";
             btn_add.UseVisualStyleBackColor = false;
+            btn_add.Click += btn_add_Click;
             // 
             // btn_delete
             // 
             btn_delete.BackColor = Color.FromArgb(64, 0, 0);
             btn_delete.ForeColor = SystemColors.ControlLightLight;
-            btn_delete.Location = new Point(768, 201);
+            btn_delete.Location = new Point(767, 202);
             btn_delete.Name = "btn_delete";
-            btn_delete.Size = new Size(121, 37);
+            btn_delete.Size = new Size(123, 36);
             btn_delete.TabIndex = 32;
             btn_delete.Text = "DESCARTAR";
             btn_delete.UseVisualStyleBackColor = false;
+            btn_delete.Click += btn_delete_Click;
+            // 
+            // btn_backpack
+            // 
+            btn_backpack.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btn_backpack.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btn_backpack.BackColor = Color.FromArgb(64, 0, 0);
+            btn_backpack.BackgroundImage = (Image)resources.GetObject("btn_backpack.BackgroundImage");
+            btn_backpack.ForeColor = SystemColors.ControlLightLight;
+            btn_backpack.Location = new Point(527, 419);
+            btn_backpack.Name = "btn_backpack";
+            btn_backpack.Size = new Size(34, 35);
+            btn_backpack.TabIndex = 33;
+            btn_backpack.UseVisualStyleBackColor = false;
+            btn_backpack.Click += btn_backpack_Click;
+            // 
+            // btn_dice
+            // 
+            btn_dice.Image = Properties.Resources.dado;
+            btn_dice.Location = new Point(752, 262);
+            btn_dice.Name = "btn_dice";
+            btn_dice.Size = new Size(24, 28);
+            btn_dice.TabIndex = 34;
+            btn_dice.UseVisualStyleBackColor = true;
+            // 
+            // lbl_dice
+            // 
+            lbl_dice.AutoSize = true;
+            lbl_dice.ForeColor = SystemColors.ControlLight;
+            lbl_dice.Location = new Point(614, 211);
+            lbl_dice.Name = "lbl_dice";
+            lbl_dice.Size = new Size(0, 15);
+            lbl_dice.TabIndex = 35;
             // 
             // MatchForm
             // 
@@ -593,6 +634,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(903, 466);
+            Controls.Add(lbl_dice);
+            Controls.Add(btn_dice);
+            Controls.Add(btn_backpack);
             Controls.Add(btn_delete);
             Controls.Add(btn_add);
             Controls.Add(btn_open_door);
@@ -671,5 +715,8 @@
         private Button btn_open_door;
         private Button btn_add;
         private Button btn_delete;
+        private Button btn_backpack;
+        private Button btn_dice;
+        private Label lbl_dice;
     }
 }
