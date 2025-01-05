@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Munchkin.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18a7e13c0404632810e7c60a03744178126cde6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Munchkin.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Munchkin.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

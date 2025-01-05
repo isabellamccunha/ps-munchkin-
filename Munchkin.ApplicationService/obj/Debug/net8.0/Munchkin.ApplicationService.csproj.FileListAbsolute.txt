@@ -9,3 +9,8 @@ C:\Faculdade\Munchkin\Munchkin.ApplicationService\obj\Debug\net8.0\Munchkin.Appl
 C:\Faculdade\Munchkin\Munchkin.ApplicationService\obj\Debug\net8.0\refint\Munchkin.ApplicationService.dll
 C:\Faculdade\Munchkin\Munchkin.ApplicationService\obj\Debug\net8.0\Munchkin.ApplicationService.pdb
 C:\Faculdade\Munchkin\Munchkin.ApplicationService\obj\Debug\net8.0\ref\Munchkin.ApplicationService.dll
+C:\Faculdade\Munchkin\Munchkin.ApplicationService\bin\Debug\net8.0\Munchkin.Domain.dll
+C:\Faculdade\Munchkin\Munchkin.ApplicationService\bin\Debug\net8.0\Munchkin.Domain.pdb
+C:\Faculdade\Munchkin\Munchkin.ApplicationService\obj\Debug\net8.0\Munchkin.ApplicationService.csproj.AssemblyReference.cache
+C:\Faculdade\Munchkin\Munchkin.ApplicationService\obj\Debug\net8.0\Munchkin.ApplicationService.sourcelink.json
+C:\Faculdade\Munchkin\Munchkin.ApplicationService\obj\Debug\net8.0\Munchkin.50B5BAD8.Up2Date

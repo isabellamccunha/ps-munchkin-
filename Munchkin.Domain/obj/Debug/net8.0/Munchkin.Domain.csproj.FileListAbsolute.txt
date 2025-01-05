@@ -9,3 +9,4 @@ C:\Faculdade\Munchkin\Munchkin.Domain\obj\Debug\net8.0\Munchkin.Domain.dll
 C:\Faculdade\Munchkin\Munchkin.Domain\obj\Debug\net8.0\refint\Munchkin.Domain.dll
 C:\Faculdade\Munchkin\Munchkin.Domain\obj\Debug\net8.0\Munchkin.Domain.pdb
 C:\Faculdade\Munchkin\Munchkin.Domain\obj\Debug\net8.0\ref\Munchkin.Domain.dll
+C:\Faculdade\Munchkin\Munchkin.Domain\obj\Debug\net8.0\Munchkin.Domain.sourcelink.json

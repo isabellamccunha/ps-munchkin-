@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Munchkin.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Munchkin.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Munchkin.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Munchkin.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Munchkin.Domain/Munchkin.Domain.csproj",
+      "msbuildProject": "../Munchkin.Domain/Munchkin.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Munchkin.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\imaud\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Munchkin.Domain.csproj": {
+              "projectPath": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Munchkin.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

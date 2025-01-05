@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             btn_bot = new Button();
             btn_amigos = new Button();
+            btn_sound = new Button();
             SuspendLayout();
             // 
             // btn_bot
@@ -58,12 +59,26 @@
             btn_amigos.Text = "JOGUE vs AMIGOS";
             btn_amigos.UseVisualStyleBackColor = false;
             // 
+            // btn_sound
+            // 
+            btn_sound.BackColor = Color.ForestGreen;
+            btn_sound.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_sound.ForeColor = Color.Snow;
+            btn_sound.Location = new Point(12, 348);
+            btn_sound.Name = "btn_sound";
+            btn_sound.Size = new Size(44, 28);
+            btn_sound.TabIndex = 2;
+            btn_sound.Text = "ON";
+            btn_sound.UseVisualStyleBackColor = false;
+            btn_sound.Click += btn_sound_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(682, 388);
+            Controls.Add(btn_sound);
             Controls.Add(btn_amigos);
             Controls.Add(btn_bot);
             Cursor = Cursors.Hand;
@@ -78,5 +93,6 @@
         private Button btn_start;
         private Button btn_bot;
         private Button btn_amigos;
+        private Button btn_sound;
     }
 }

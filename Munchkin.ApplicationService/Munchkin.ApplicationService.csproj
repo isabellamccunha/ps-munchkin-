@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Munchkin.Domain\Munchkin.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -68,26 +68,10 @@
             lbl_human_myself = new Label();
             img_myself = new PictureBox();
             lbl_myself = new Label();
-            btn_curse = new Button();
-            btn_monster = new Button();
-            btn_treasure = new Button();
-            btn_class = new Button();
-            img_curse = new PictureBox();
-            lbl_curse = new Label();
-            lbl_curse_level = new Label();
-            img_monster = new PictureBox();
-            lbl_monster = new Label();
-            lbl_level_monster = new Label();
-            lbl_rewards_monster = new Label();
-            lbl_rewards_treaseare = new Label();
-            img_treasure = new PictureBox();
-            lbl_treasure = new Label();
-            lbl_treasure_attack = new Label();
-            img_sword = new PictureBox();
-            lbl_class = new Label();
-            lbl_ability_class = new Label();
-            lbl_ability_number_class = new Label();
-            img_monster_card = new PictureBox();
+            btn_initialize_match = new Button();
+            btn_open_door = new Button();
+            btn_add = new Button();
+            btn_delete = new Button();
             gb_first_player.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)img_first_player).BeginInit();
             gb_second_player.SuspendLayout();
@@ -96,11 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)img_third_player).BeginInit();
             gb_myself.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)img_myself).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)img_curse).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)img_monster).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)img_treasure).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)img_sword).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)img_monster_card).BeginInit();
             SuspendLayout();
             // 
             // gb_first_player
@@ -162,7 +141,7 @@
             lbl_card_number_first_player.Name = "lbl_card_number_first_player";
             lbl_card_number_first_player.Size = new Size(23, 28);
             lbl_card_number_first_player.TabIndex = 4;
-            lbl_card_number_first_player.Text = "4";
+            lbl_card_number_first_player.Text = "0";
             // 
             // lbl_level_number_first_player
             // 
@@ -213,7 +192,7 @@
             // 
             btn_attack.BackColor = Color.FromArgb(64, 0, 0);
             btn_attack.ForeColor = Color.Bisque;
-            btn_attack.Location = new Point(576, 160);
+            btn_attack.Location = new Point(765, 159);
             btn_attack.Name = "btn_attack";
             btn_attack.Size = new Size(126, 37);
             btn_attack.TabIndex = 1;
@@ -224,7 +203,7 @@
             // 
             btn_help.BackColor = Color.FromArgb(64, 0, 0);
             btn_help.ForeColor = Color.Bisque;
-            btn_help.Location = new Point(576, 203);
+            btn_help.Location = new Point(767, 202);
             btn_help.Name = "btn_help";
             btn_help.Size = new Size(124, 36);
             btn_help.TabIndex = 2;
@@ -235,7 +214,7 @@
             // 
             btn_escape.BackColor = Color.FromArgb(64, 0, 0);
             btn_escape.ForeColor = Color.Bisque;
-            btn_escape.Location = new Point(576, 245);
+            btn_escape.Location = new Point(765, 244);
             btn_escape.Name = "btn_escape";
             btn_escape.Size = new Size(124, 36);
             btn_escape.TabIndex = 3;
@@ -289,7 +268,7 @@
             lbl_card_number_second_player.Name = "lbl_card_number_second_player";
             lbl_card_number_second_player.Size = new Size(23, 28);
             lbl_card_number_second_player.TabIndex = 5;
-            lbl_card_number_second_player.Text = "4";
+            lbl_card_number_second_player.Text = "0";
             // 
             // lbl_level_second_player
             // 
@@ -383,7 +362,7 @@
             lbl_card_number_third_player.Name = "lbl_card_number_third_player";
             lbl_card_number_third_player.Size = new Size(23, 28);
             lbl_card_number_third_player.TabIndex = 12;
-            lbl_card_number_third_player.Text = "4";
+            lbl_card_number_third_player.Text = "0";
             // 
             // lbl_level_third_player
             // 
@@ -486,7 +465,7 @@
             lbl_card_number_myself.Name = "lbl_card_number_myself";
             lbl_card_number_myself.Size = new Size(23, 28);
             lbl_card_number_myself.TabIndex = 14;
-            lbl_card_number_myself.Text = "4";
+            lbl_card_number_myself.Text = "0";
             // 
             // lbl_level_myself
             // 
@@ -556,243 +535,57 @@
             lbl_myself.AutoSize = true;
             lbl_myself.Font = new Font("Perpetua", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_myself.ForeColor = Color.NavajoWhite;
-            lbl_myself.Location = new Point(181, 396);
+            lbl_myself.Location = new Point(90, 408);
             lbl_myself.Name = "lbl_myself";
             lbl_myself.Size = new Size(48, 18);
             lbl_myself.TabIndex = 8;
             lbl_myself.Text = "VOCÊ";
             // 
-            // btn_curse
+            // btn_initialize_match
             // 
-            btn_curse.BackColor = Color.Bisque;
-            btn_curse.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_curse.ForeColor = Color.SaddleBrown;
-            btn_curse.Location = new Point(273, 313);
-            btn_curse.Name = "btn_curse";
-            btn_curse.Size = new Size(109, 132);
-            btn_curse.TabIndex = 9;
-            btn_curse.Text = "FOME";
-            btn_curse.UseVisualStyleBackColor = false;
-            btn_curse.MouseEnter += btn_curse_MouseEnter;
+            btn_initialize_match.BackColor = Color.FromArgb(64, 0, 0);
+            btn_initialize_match.ForeColor = SystemColors.ControlLightLight;
+            btn_initialize_match.Location = new Point(334, 179);
+            btn_initialize_match.Name = "btn_initialize_match";
+            btn_initialize_match.Size = new Size(134, 60);
+            btn_initialize_match.TabIndex = 29;
+            btn_initialize_match.Text = "INICIAR PARTIDA";
+            btn_initialize_match.UseVisualStyleBackColor = false;
+            btn_initialize_match.Click += btn_initialize_match_Click;
             // 
-            // btn_monster
+            // btn_open_door
             // 
-            btn_monster.BackColor = Color.Bisque;
-            btn_monster.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_monster.ForeColor = Color.SaddleBrown;
-            btn_monster.Location = new Point(385, 313);
-            btn_monster.Name = "btn_monster";
-            btn_monster.Size = new Size(109, 132);
-            btn_monster.TabIndex = 10;
-            btn_monster.Text = "DRAGÃO VERDE";
-            btn_monster.UseVisualStyleBackColor = false;
-            btn_monster.Click += btn_monster_Click;
-            btn_monster.MouseEnter += btn_monster_MouseEnter;
+            btn_open_door.BackColor = Color.FromArgb(64, 0, 0);
+            btn_open_door.ForeColor = SystemColors.ControlLightLight;
+            btn_open_door.Location = new Point(576, 314);
+            btn_open_door.Name = "btn_open_door";
+            btn_open_door.Size = new Size(112, 41);
+            btn_open_door.TabIndex = 30;
+            btn_open_door.Text = "ABRIR PORTA";
+            btn_open_door.UseVisualStyleBackColor = false;
+            btn_open_door.Click += btn_open_door_Click;
             // 
-            // btn_treasure
+            // btn_add
             // 
-            btn_treasure.BackColor = Color.Bisque;
-            btn_treasure.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_treasure.ForeColor = Color.SaddleBrown;
-            btn_treasure.Location = new Point(498, 315);
-            btn_treasure.Name = "btn_treasure";
-            btn_treasure.Size = new Size(109, 130);
-            btn_treasure.TabIndex = 11;
-            btn_treasure.Text = "ESPADA FLAMEJANTE";
-            btn_treasure.UseVisualStyleBackColor = false;
-            btn_treasure.MouseEnter += btn_treasure_MouseEnter;
+            btn_add.BackColor = Color.FromArgb(64, 0, 0);
+            btn_add.ForeColor = SystemColors.ControlLightLight;
+            btn_add.Location = new Point(765, 159);
+            btn_add.Name = "btn_add";
+            btn_add.Size = new Size(124, 37);
+            btn_add.TabIndex = 31;
+            btn_add.Text = "GUARDAR";
+            btn_add.UseVisualStyleBackColor = false;
             // 
-            // btn_class
+            // btn_delete
             // 
-            btn_class.BackColor = Color.Bisque;
-            btn_class.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_class.ForeColor = Color.SaddleBrown;
-            btn_class.Location = new Point(613, 315);
-            btn_class.Name = "btn_class";
-            btn_class.Size = new Size(109, 130);
-            btn_class.TabIndex = 12;
-            btn_class.Text = "LADINO";
-            btn_class.UseVisualStyleBackColor = false;
-            btn_class.MouseEnter += btn_class_MouseEnter;
-            // 
-            // img_curse
-            // 
-            img_curse.BackColor = Color.Bisque;
-            img_curse.Image = Properties.Resources.bomba;
-            img_curse.Location = new Point(276, 317);
-            img_curse.Name = "img_curse";
-            img_curse.Size = new Size(38, 38);
-            img_curse.TabIndex = 13;
-            img_curse.TabStop = false;
-            // 
-            // lbl_curse
-            // 
-            lbl_curse.AutoSize = true;
-            lbl_curse.BackColor = Color.Bisque;
-            lbl_curse.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_curse.ForeColor = Color.DarkGoldenrod;
-            lbl_curse.Location = new Point(310, 322);
-            lbl_curse.Name = "lbl_curse";
-            lbl_curse.Size = new Size(69, 14);
-            lbl_curse.TabIndex = 14;
-            lbl_curse.Text = "MALDIÇÃO";
-            // 
-            // lbl_curse_level
-            // 
-            lbl_curse_level.AutoSize = true;
-            lbl_curse_level.BackColor = Color.Bisque;
-            lbl_curse_level.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_curse_level.ForeColor = Color.SaddleBrown;
-            lbl_curse_level.Location = new Point(294, 421);
-            lbl_curse_level.Name = "lbl_curse_level";
-            lbl_curse_level.Size = new Size(69, 14);
-            lbl_curse_level.TabIndex = 15;
-            lbl_curse_level.Text = "-2 DE NÍVEL";
-            // 
-            // img_monster
-            // 
-            img_monster.Image = Properties.Resources.monster;
-            img_monster.Location = new Point(391, 318);
-            img_monster.Name = "img_monster";
-            img_monster.Size = new Size(31, 38);
-            img_monster.TabIndex = 16;
-            img_monster.TabStop = false;
-            // 
-            // lbl_monster
-            // 
-            lbl_monster.AutoSize = true;
-            lbl_monster.BackColor = Color.Bisque;
-            lbl_monster.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_monster.ForeColor = Color.DarkGoldenrod;
-            lbl_monster.Location = new Point(423, 322);
-            lbl_monster.Name = "lbl_monster";
-            lbl_monster.Size = new Size(65, 14);
-            lbl_monster.TabIndex = 17;
-            lbl_monster.Text = "MONSTRO";
-            // 
-            // lbl_level_monster
-            // 
-            lbl_level_monster.AutoSize = true;
-            lbl_level_monster.BackColor = Color.Bisque;
-            lbl_level_monster.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_level_monster.ForeColor = Color.SaddleBrown;
-            lbl_level_monster.Location = new Point(412, 400);
-            lbl_level_monster.Name = "lbl_level_monster";
-            lbl_level_monster.Size = new Size(53, 14);
-            lbl_level_monster.TabIndex = 18;
-            lbl_level_monster.Text = "NÍVEL 10";
-            // 
-            // lbl_rewards_monster
-            // 
-            lbl_rewards_monster.AutoSize = true;
-            lbl_rewards_monster.BackColor = Color.Bisque;
-            lbl_rewards_monster.Font = new Font("Perpetua", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_rewards_monster.ForeColor = Color.SaddleBrown;
-            lbl_rewards_monster.Location = new Point(400, 417);
-            lbl_rewards_monster.Name = "lbl_rewards_monster";
-            lbl_rewards_monster.Size = new Size(79, 13);
-            lbl_rewards_monster.TabIndex = 19;
-            lbl_rewards_monster.Text = "RECOMPENSA:";
-            // 
-            // lbl_rewards_treaseare
-            // 
-            lbl_rewards_treaseare.AutoSize = true;
-            lbl_rewards_treaseare.BackColor = Color.Bisque;
-            lbl_rewards_treaseare.Font = new Font("Perpetua", 6.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_rewards_treaseare.ForeColor = Color.SaddleBrown;
-            lbl_rewards_treaseare.Location = new Point(408, 429);
-            lbl_rewards_treaseare.Name = "lbl_rewards_treaseare";
-            lbl_rewards_treaseare.Size = new Size(56, 10);
-            lbl_rewards_treaseare.TabIndex = 20;
-            lbl_rewards_treaseare.Text = "-2 TESOUROS";
-            // 
-            // img_treasure
-            // 
-            img_treasure.Image = Properties.Resources.treasure;
-            img_treasure.Location = new Point(506, 320);
-            img_treasure.Name = "img_treasure";
-            img_treasure.Size = new Size(28, 38);
-            img_treasure.TabIndex = 21;
-            img_treasure.TabStop = false;
-            // 
-            // lbl_treasure
-            // 
-            lbl_treasure.AutoSize = true;
-            lbl_treasure.BackColor = Color.Bisque;
-            lbl_treasure.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_treasure.ForeColor = Color.DarkGoldenrod;
-            lbl_treasure.Location = new Point(540, 322);
-            lbl_treasure.Name = "lbl_treasure";
-            lbl_treasure.Size = new Size(61, 14);
-            lbl_treasure.TabIndex = 22;
-            lbl_treasure.Text = "TESOURO";
-            // 
-            // lbl_treasure_attack
-            // 
-            lbl_treasure_attack.AutoSize = true;
-            lbl_treasure_attack.BackColor = Color.Bisque;
-            lbl_treasure_attack.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_treasure_attack.ForeColor = Color.SaddleBrown;
-            lbl_treasure_attack.Location = new Point(508, 414);
-            lbl_treasure_attack.Name = "lbl_treasure_attack";
-            lbl_treasure_attack.Size = new Size(89, 14);
-            lbl_treasure_attack.TabIndex = 23;
-            lbl_treasure_attack.Text = "+3 DE ATAQUE";
-            // 
-            // img_sword
-            // 
-            img_sword.Image = Properties.Resources.espada;
-            img_sword.Location = new Point(617, 320);
-            img_sword.Name = "img_sword";
-            img_sword.Size = new Size(31, 38);
-            img_sword.TabIndex = 24;
-            img_sword.TabStop = false;
-            // 
-            // lbl_class
-            // 
-            lbl_class.AutoSize = true;
-            lbl_class.BackColor = Color.Bisque;
-            lbl_class.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_class.ForeColor = Color.DarkGoldenrod;
-            lbl_class.Location = new Point(656, 321);
-            lbl_class.Name = "lbl_class";
-            lbl_class.Size = new Size(46, 14);
-            lbl_class.TabIndex = 25;
-            lbl_class.Text = "CLASSE";
-            // 
-            // lbl_ability_class
-            // 
-            lbl_ability_class.AutoSize = true;
-            lbl_ability_class.BackColor = Color.Bisque;
-            lbl_ability_class.Font = new Font("Perpetua", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_ability_class.ForeColor = Color.SaddleBrown;
-            lbl_ability_class.Location = new Point(627, 411);
-            lbl_ability_class.Name = "lbl_ability_class";
-            lbl_ability_class.Size = new Size(80, 14);
-            lbl_ability_class.TabIndex = 26;
-            lbl_ability_class.Text = "HABILIDADE:";
-            // 
-            // lbl_ability_number_class
-            // 
-            lbl_ability_number_class.AutoSize = true;
-            lbl_ability_number_class.BackColor = Color.Bisque;
-            lbl_ability_number_class.Font = new Font("Perpetua", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_ability_number_class.ForeColor = Color.SaddleBrown;
-            lbl_ability_number_class.Location = new Point(643, 425);
-            lbl_ability_number_class.Name = "lbl_ability_number_class";
-            lbl_ability_number_class.Size = new Size(45, 13);
-            lbl_ability_number_class.TabIndex = 27;
-            lbl_ability_number_class.Text = "ROUBO";
-            // 
-            // img_monster_card
-            // 
-            img_monster_card.Image = Properties.Resources.monster_card;
-            img_monster_card.Location = new Point(742, 119);
-            img_monster_card.Name = "img_monster_card";
-            img_monster_card.Size = new Size(140, 187);
-            img_monster_card.SizeMode = PictureBoxSizeMode.Zoom;
-            img_monster_card.TabIndex = 28;
-            img_monster_card.TabStop = false;
+            btn_delete.BackColor = Color.FromArgb(64, 0, 0);
+            btn_delete.ForeColor = SystemColors.ControlLightLight;
+            btn_delete.Location = new Point(768, 201);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(121, 37);
+            btn_delete.TabIndex = 32;
+            btn_delete.Text = "DESCARTAR";
+            btn_delete.UseVisualStyleBackColor = false;
             // 
             // MatchForm
             // 
@@ -800,26 +593,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(903, 466);
-            Controls.Add(img_monster_card);
-            Controls.Add(lbl_ability_number_class);
-            Controls.Add(lbl_ability_class);
-            Controls.Add(lbl_class);
-            Controls.Add(img_sword);
-            Controls.Add(lbl_treasure_attack);
-            Controls.Add(lbl_treasure);
-            Controls.Add(img_treasure);
-            Controls.Add(lbl_rewards_treaseare);
-            Controls.Add(lbl_rewards_monster);
-            Controls.Add(lbl_level_monster);
-            Controls.Add(lbl_monster);
-            Controls.Add(img_monster);
-            Controls.Add(lbl_curse_level);
-            Controls.Add(lbl_curse);
-            Controls.Add(img_curse);
-            Controls.Add(btn_class);
-            Controls.Add(btn_treasure);
-            Controls.Add(btn_monster);
-            Controls.Add(btn_curse);
+            Controls.Add(btn_delete);
+            Controls.Add(btn_add);
+            Controls.Add(btn_open_door);
+            Controls.Add(btn_initialize_match);
             Controls.Add(lbl_myself);
             Controls.Add(gb_myself);
             Controls.Add(gb_third_player);
@@ -844,11 +621,6 @@
             gb_myself.ResumeLayout(false);
             gb_myself.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)img_myself).EndInit();
-            ((System.ComponentModel.ISupportInitialize)img_curse).EndInit();
-            ((System.ComponentModel.ISupportInitialize)img_monster).EndInit();
-            ((System.ComponentModel.ISupportInitialize)img_treasure).EndInit();
-            ((System.ComponentModel.ISupportInitialize)img_sword).EndInit();
-            ((System.ComponentModel.ISupportInitialize)img_monster_card).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -895,25 +667,9 @@
         private Label lbl_card_number_myself;
         private Label lbl_card_myself;
         private Label lbl_myself;
-        private Button btn_curse;
-        private Button btn_monster;
-        private Button btn_treasure;
-        private Button btn_class;
-        private PictureBox img_curse;
-        private Label lbl_curse;
-        private Label lbl_curse_level;
-        private PictureBox img_monster;
-        private Label lbl_monster;
-        private Label lbl_level_monster;
-        private Label lbl_rewards_monster;
-        private Label lbl_rewards_treaseare;
-        private PictureBox img_treasure;
-        private Label lbl_treasure;
-        private Label lbl_treasure_attack;
-        private PictureBox img_sword;
-        private Label lbl_class;
-        private Label lbl_ability_class;
-        private Label lbl_ability_number_class;
-        private PictureBox img_monster_card;
+        private Button btn_initialize_match;
+        private Button btn_open_door;
+        private Button btn_add;
+        private Button btn_delete;
     }
 }
