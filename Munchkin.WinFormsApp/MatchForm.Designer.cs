@@ -225,7 +225,7 @@
             btn_escape.Name = "btn_escape";
             btn_escape.Size = new Size(124, 36);
             btn_escape.TabIndex = 3;
-            btn_escape.Text = "TENTAR FUJIR";
+            btn_escape.Text = "TENTAR FUGIR";
             btn_escape.UseVisualStyleBackColor = false;
             btn_escape.Click += btn_escape_Click;
             // 
