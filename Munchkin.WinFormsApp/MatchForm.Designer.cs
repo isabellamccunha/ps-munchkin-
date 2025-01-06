@@ -215,7 +215,10 @@
             btn_help.TabIndex = 2;
             btn_help.Text = "PEDIR AJUDA";
             btn_help.UseVisualStyleBackColor = false;
-            btn_help.Click += btn_help_Click;
+            btn_help.Click += (sender, e) =>
+            {
+                MessageBox.Show("@TODO: Implementação da funcionalidade 'Pedir Ajuda' em progresso.");
+            };
             // 
             // btn_escape
             // 
@@ -583,7 +586,7 @@
             btn_add.TabIndex = 31;
             btn_add.Text = "GUARDAR";
             btn_add.UseVisualStyleBackColor = false;
-            btn_add.Click += btn_add_Click;
+            btn_add.Click += new EventHandler(this.btn_add_Click);
             // 
             // btn_delete
             // 
@@ -595,7 +598,7 @@
             btn_delete.TabIndex = 32;
             btn_delete.Text = "DESCARTAR";
             btn_delete.UseVisualStyleBackColor = false;
-            btn_delete.Click += btn_delete_Click;
+            btn_delete.Click += new EventHandler(this.btn_delete_Click);
             // 
             // btn_backpack
             // 
@@ -609,7 +612,7 @@
             btn_backpack.Size = new Size(32, 36);
             btn_backpack.TabIndex = 33;
             btn_backpack.UseVisualStyleBackColor = false;
-            btn_backpack.Click += btn_backpack_Click;
+            btn_backpack.Click += new EventHandler(this.btn_backpack_Click);
             // 
             // btn_dice
             // 
@@ -639,7 +642,12 @@
             btn_back.TabIndex = 36;
             btn_back.Text = "VOLTAR";
             btn_back.UseVisualStyleBackColor = false;
-            btn_back.Click += btn_back_Click_1;
+            btn_back.Click += (sender, e) =>
+            {
+                this.Hide();
+                var mainForm = new MainForm();
+                mainForm.ShowDialog();
+            };
             // 
             // MatchForm
             // 
@@ -667,7 +675,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MatchForm";
             Text = "MatchForm";
-            Load += MatchForm_Load;
             gb_first_player.ResumeLayout(false);
             gb_first_player.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)img_first_player).EndInit();
