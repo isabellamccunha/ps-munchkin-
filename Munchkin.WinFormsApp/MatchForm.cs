@@ -1,243 +1,282 @@
 ﻿using Munchkin.ApplicationService;
 using Munchkin.Domain.Entities;
 using Munchkin.Domain.Shared.Abstractions;
+using Munchkin.Domain.Utils;
 using Munchkin.WinFormsApp.Utils;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Munchkin.WinFormsApp
 {
     public partial class MatchForm : Form
     {
-        private GameApplicationService _gameApplicationService;
+        private readonly GameApplicationService _gameApplicationService;
         private Match _match;
 
         private Card _chosenCard;
-        private Card _clickCard;
-
         private Backpack _backpack;
-
-        private Button _choosenButton;
+        private Button _chosenButton;
 
         public MatchForm()
         {
             InitializeComponent();
-
-
-            HideCards();
-
             _gameApplicationService = new GameApplicationService();
             _backpack = new Backpack();
+
+            HideButtons();
         }
 
         private void btn_initialize_match_Click(object sender, EventArgs e)
         {
             _match = _gameApplicationService.InitializeGame();
 
-            MessageBox.Show("Embaralhando cartas....");
+            MessageBox.Show("Cartas embaralhadas e jogadores prontos!");
 
-            LoadMyselfCardForm();
+            LoadMyselfCards();
+            UpdateCardNumbers();
+            ConfigureGameStart();
+        }
+
+        private void ConfigureGameStart()
+        {
             btn_initialize_match.Hide();
-
-            ChangeCardNumbers();
-
             btn_open_door.Show();
-
             DisableBackButton();
         }
 
-        public void DisableBackButton()
+        private void DisableBackButton()
         {
             btn_back.Enabled = false;
             btn_back.BackColor = Color.Gray;
-            btn_back.ForeColor = Color.DarkGray;
         }
 
-        public void EnableBackButton()
+        private void EnableBackButton()
         {
             btn_back.Enabled = true;
             btn_back.BackColor = Color.AliceBlue;
-            btn_back.ForeColor = Color.Black;
         }
 
-        private void HideCards()
+        private void HideButtons()
         {
-            btn_attack.Hide();
-            btn_help.Hide();
-            btn_escape.Hide();
-            btn_open_door.Hide();
-            btn_add.Hide();
-            btn_delete.Hide();
-            btn_backpack.Hide();
-            btn_dice.Hide();
+            foreach (var button in new[] { btn_attack, btn_help, btn_escape, btn_open_door, btn_add, btn_delete, btn_backpack, btn_dice })
+            {
+                button.Hide();
+            }
         }
 
-        private void ChangeCardNumbers()
+        private void UpdateCardNumbers()
         {
-            var cardNumbersFirstPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player1").Cards.Count();
-            lbl_card_number_first_player.Text = cardNumbersFirstPlayer.ToString();
-
-            var cardNumbersSecondPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player2").Cards.Count();
-            lbl_card_number_second_player.Text = cardNumbersFirstPlayer.ToString();
-
-            var cardNumbersThirdPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player3").Cards.Count();
-            lbl_card_number_third_player.Text = cardNumbersThirdPlayer.ToString();
-
-            var cardNumbersMyselfPlayer = _match.Players.FirstOrDefault(x => x.Username == "Myself").Cards.Count();
-            lbl_card_number_myself.Text = cardNumbersMyselfPlayer.ToString();
+            foreach (var player in _match.Players)
+            {
+                UpdatePlayerCardCount(player);
+            }
         }
 
-        private void LoadMyselfCardForm()
+        private void UpdatePlayerCardCount(Player player)
+        {
+            var cardCount = player.Cards.Count;
+
+            switch (player.Username)
+            {
+                case "Player1":
+                    lbl_card_number_first_player.Text = cardCount.ToString();
+                    break;
+                case "Player2":
+                    lbl_card_number_second_player.Text = cardCount.ToString();
+                    break;
+                case "Player3":
+                    lbl_card_number_third_player.Text = cardCount.ToString();
+                    break;
+                case "Myself":
+                    lbl_card_number_myself.Text = cardCount.ToString();
+                    break;
+            }
+        }
+
+        private void LoadMyselfCards()
         {
             var myself = _match.Players.FirstOrDefault(p => p.Username == "Myself");
+            if (myself == null) return;
 
-            LoadCards(myself.Cards);
+            LoadCardsToUI(myself.Cards);
         }
 
-        private void LoadCards(List<Card> cards)
+        private void LoadCardsToUI(IEnumerable<Card> cards)
         {
             int startLocationX = 226, startLocationY = 204;
 
             foreach (var card in cards)
             {
-
-                var button = ButtonCreator.CreateCardButton
-                (
-                    "btn_myself_cards",
-                    card,
-                    startLocationX,
-                    startLocationY
-                );
-
-                button.Click += (sender, e) => Button_Click(sender, e, card);
-
-                this.Controls.Add(button);
-
+                var button = ButtonCreator.CreateCardButton("btn_myself_card", card, startLocationX, startLocationY);
+                button.Click += (_, _) => HandleCardSelection(card);
+                Controls.Add(button);
 
                 startLocationX += 81;
-
                 if ((startLocationX - 226) / 77 >= 4)
                 {
                     startLocationX = 226;
                     startLocationY += 130;
                 }
             }
-
         }
 
-
-        private void Button_Click(object sender, EventArgs e, Card card)
+        private void HandleCardSelection(Card card)
         {
-            DialogResult result = MessageBox.Show
-            (
-                $"Você deseja escolher a carta: {card.Name} ?",
-                "Sim",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question
-            );
+            if (MessageBox.Show($"Você deseja escolher a carta: {card.Name}?", "Confirmação", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                return;
 
-            if (result == DialogResult.OK)
-            {
-                if (card.Type == "Classe")
-                {
-                    lbl_class_myself.Text = card.Name.ToUpper();
-                }
-            }
+            if (card.Type == "Classe")
+                lbl_class_myself.Text = card.Name.ToUpper();
 
-            _clickCard = card;
+            _chosenCard = card;
         }
 
         private void btn_open_door_Click(object sender, EventArgs e)
         {
             _chosenCard = _match.Deck.ChooseCard();
-
-            _choosenButton = ButtonCreator.CreateCardButton
-            (
-                "btn_choosen_card",
-                _chosenCard,
-                596,
-                160
-            );
-
-            this.Controls.Add(_choosenButton);
-
+            DisplayChosenCard(_chosenCard);
             btn_open_door.Hide();
-            if (_chosenCard.Type == "Monstro")
+            HandleChosenCard(_chosenCard);
+        }
+
+        private void DisplayChosenCard(Card card)
+        {
+            _chosenButton = ButtonCreator.CreateCardButton("btn_chosen_card", card, 596, 160);
+            Controls.Add(_chosenButton);
+        }
+
+        private void HandleChosenCard(Card card)
+        {
+            switch (card.Type)
             {
-                btn_attack.Show();
-                btn_help.Show();
-                btn_escape.Show();
+                case "Monstro":
+                    ShowMonsterButtons();
+                    break;
+                case "Tesouro":
+                    AddTreasureToPlayerInventory(card);
+                    break;
+                case "Maldição":
+                    ApplyCurseToPlayer(card);
+                    break;
+                default:
+                    ShowGenericCardButtons();
+                    break;
+            }
+        }
+
+        private void AddTreasureToPlayerInventory(Card card)
+        {
+            MessageBox.Show($"Você encontrou um tesouro: {card.Name}!");
+            _backpack.AddNewCard(card);
+            UpdateCardNumbers();
+            ResetAfterCardAction();
+        }
+
+        private void ApplyCurseToPlayer(Card card)
+        {
+            MessageBox.Show($"Você foi amaldiçoado: {card.Name} - {card.Description}");
+            // Aplicar efeitos específicos da maldição aqui
+            ResetAfterCardAction();
+        }
+
+        private void ShowMonsterButtons()
+        {
+            btn_attack.Show();
+            btn_help.Show();
+            btn_escape.Show();
+        }
+
+        private void ShowGenericCardButtons()
+        {
+            btn_add.Show();
+            btn_delete.Show();
+        }
+
+        private void ResetAfterCardAction()
+        {
+            _chosenButton?.Hide();
+            btn_open_door.Show();
+        }
+
+        private void btn_escape_Click(object sender, EventArgs e)
+        {
+            var diceRoll = RandomNumberGenerator.GenerateNumberFrom1To10();
+            HandleEscape(diceRoll);
+        }
+
+        private void HandleEscape(int diceRoll)
+        {
+            MessageBox.Show($"Você rolou o número {diceRoll}!");
+            if (diceRoll >= 5)
+            {
+                MessageBox.Show("Você escapou com sucesso!");
             }
             else
             {
-                btn_add.Show();
-                btn_delete.Show();
+                MessageBox.Show("Você falhou em escapar!");
+                // Aplicar penalidades
             }
+            ResetAfterCardAction();
         }
 
-        private void MatchForm_Load(object sender, EventArgs e)
+        private void btn_attack_Click(object sender, EventArgs e)
         {
+            if (_chosenCard == null || _chosenCard.Type != "Monstro")
+            {
+                MessageBox.Show("Selecione um monstro para atacar!");
+                return;
+            }
 
+            HandleAttackOutcome();
         }
 
-        private void btn_monster_Click(object sender, EventArgs e)
+        private void HandleAttackOutcome()
         {
-
-        }
-
-        private void btn_curse_MouseEnter(object sender, EventArgs e)
-        {
-            //PlayMouseEnter();
-        }
-
-        private void btn_monster_MouseEnter(object sender, EventArgs e)
-        {
-            PlayMouseEnter();
-        }
-
-        private void btn_treasure_MouseEnter(object sender, EventArgs e)
-        {
-            //PlayMouseEnter();
-        }
-
-        private void btn_class_MouseEnter(object sender, EventArgs e)
-        {
-            //PlayMouseEnter();
-        }
-
-        private void PlayMouseEnter()
-        {
-            // TOOD: Colocar o caminho dentro da aplicação
-            // SoundPlayer clickSound = new SoundPlayer("C:/Users/imaud/Music/click_sound.wav");
-            //clickSound.Play();
-        }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            MainForm mainForm = new MainForm();
-            mainForm.ShowDialog();
+            var diceRoll = RandomNumberGenerator.GenerateNumberFrom1To100();
+            if (_chosenCard.Power < diceRoll)
+            {
+                MessageBox.Show("Você derrotou o monstro!");
+                // Atualizar nível e recompensas
+            }
+            else
+            {
+                MessageBox.Show("O monstro venceu!");
+                // Aplicar penalidades
+            }
+            ResetAfterCardAction();
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
+            if (_chosenCard == null)
+            {
+                MessageBox.Show("Nenhuma carta selecionada para guardar.");
+                return;
+            }
+
             _backpack.AddNewCard(_chosenCard);
 
             var totalCards = int.Parse(lbl_card_number_myself.Text) + 1;
             lbl_card_number_myself.Text = totalCards.ToString();
 
+            MessageBox.Show($"Carta '{_chosenCard.Name}' adicionada à mochila!");
+
             btn_add.Hide();
             btn_delete.Hide();
-
-            _choosenButton.Hide();
-
+            _chosenButton?.Hide();
             btn_open_door.Show();
             btn_backpack.Show();
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            _choosenButton.Hide();
+            if (_chosenCard == null)
+            {
+                MessageBox.Show("Nenhuma carta selecionada para descartar.");
+                return;
+            }
+
+            MessageBox.Show($"Carta '{_chosenCard.Name}' descartada.");
+
+            _chosenButton?.Hide();
             btn_add.Hide();
             btn_delete.Hide();
             btn_open_door.Show();
@@ -245,94 +284,8 @@ namespace Munchkin.WinFormsApp
 
         private void btn_backpack_Click(object sender, EventArgs e)
         {
-            var backpack = new BackpackForm(_backpack);
-            backpack.ShowDialog();
-        }
-
-        private void btn_escape_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Rolando dado...");
-            btn_dice.Show();
-
-            Random random = new Random();
-
-            var number = random.Next(1, 7);
-
-            var level = int.Parse(lbl_level_number_myself.Text);
-
-
-            if (number == 6 || number == 5)
-            {
-                MessageBox.Show($"Número sorteado: {number} :: Você venceu o combate!! Subiu um nível!");
-                level++;
-            }
-            else
-            {
-                MessageBox.Show($"Número sorteado: {number} :: Você perdeu o combate!! Desceu um nível!");
-
-                if (level != 1)
-                {
-                    level--;
-                }
-            }
-
-            lbl_level_number_myself.Text = level.ToString();
-
-            lbl_dice.Hide();
-            btn_dice.Hide();
-            HideMonsterButtons();
-
-            btn_open_door.Show();
-            _choosenButton.Hide();
-        }
-
-        private void btn_help_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_attack_Click(object sender, EventArgs e)
-        {
-            if (_clickCard is null || _clickCard.Type != "Monstro")
-            {
-                MessageBox.Show("Você deve escolher uma carta do tipo Monstro para poder atacar!");
-            }
-            else
-            {
-                // TODO: Concentrar lógica em um método para ser reutilizável (Lógica repetida)
-                var level = int.Parse(lbl_level_number_myself.Text);
-                if (_clickCard.Power > _chosenCard.Power)
-                {
-                    MessageBox.Show($"Seu monstro é mais poderoso!! Você subiu um nível");
-                    level++;
-                }
-                else
-                {
-                    if (level != 1)
-                    {
-                        MessageBox.Show($"Seu monstro perdeu!! Você desceu um nível");
-                        level--;
-                    }
-                }
-
-                lbl_level_number_myself.Text = level.ToString();
-                // adicionar carta a mochila, esconder carta e aparecer com a mochila
-            }
-        }
-
-        private void HideMonsterButtons()
-        {
-            btn_escape.Hide();
-            btn_help.Hide();
-            btn_attack.Hide();
-        }
-
-        private void btn_back_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            var mainForm = new MainForm();
-            mainForm.ShowDialog();
+            var backpackForm = new BackpackForm(_backpack);
+            backpackForm.ShowDialog();
         }
     }
 }

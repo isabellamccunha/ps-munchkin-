@@ -16,7 +16,10 @@
       },
       "Munchkin.Domain/1.0.0": {
         "runtime": {
-          "Munchkin.Domain.dll": {}
+          "Munchkin.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
