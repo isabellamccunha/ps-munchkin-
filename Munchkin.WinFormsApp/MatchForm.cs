@@ -1,20 +1,22 @@
 ﻿using Munchkin.ApplicationService;
 using Munchkin.Domain.Entities;
+using Munchkin.Domain.Entities.Cards;
+using Munchkin.Domain.Enums;
 using Munchkin.Domain.Shared.Abstractions;
 using Munchkin.WinFormsApp.Utils;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Munchkin.WinFormsApp
 {
     public partial class MatchForm : Form
     {
         private GameApplicationService _gameApplicationService;
+
+        private Player _myselfPlayer;
+
         private Match _match;
 
         private Card _chosenCard;
         private Card _clickCard;
-
-        private Backpack _backpack;
 
         private Button _choosenButton;
 
@@ -25,13 +27,14 @@ namespace Munchkin.WinFormsApp
 
             HideCards();
 
-            _gameApplicationService = new GameApplicationService();
-            _backpack = new Backpack();
+            _gameApplicationService = new GameApplicationService();           
         }
 
         private void btn_initialize_match_Click(object sender, EventArgs e)
         {
             _match = _gameApplicationService.InitializeGame();
+
+            _myselfPlayer = _match.Players.FirstOrDefault(x => x.Username == "Myself");
 
             MessageBox.Show("Embaralhando cartas....");
 
@@ -73,24 +76,26 @@ namespace Munchkin.WinFormsApp
 
         private void ChangeCardNumbers()
         {
-            var cardNumbersFirstPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player1").Cards.Count();
-            lbl_card_number_first_player.Text = cardNumbersFirstPlayer.ToString();
+            var firstPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player1");
+            var secondPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player2");
+            var thirdPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player3");
+            
+            // card numbers
+            lbl_card_number_first_player.Text = firstPlayer.Cards.Count().ToString();
+            lbl_card_number_second_player.Text = secondPlayer.Cards.Count().ToString();
+            lbl_card_number_third_player.Text = thirdPlayer.Cards.Count().ToString();
+            lbl_card_number_myself.Text = _myselfPlayer.Cards.Count().ToString();
 
-            var cardNumbersSecondPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player2").Cards.Count();
-            lbl_card_number_second_player.Text = cardNumbersFirstPlayer.ToString();
-
-            var cardNumbersThirdPlayer = _match.Players.FirstOrDefault(x => x.Username == "Player3").Cards.Count();
-            lbl_card_number_third_player.Text = cardNumbersThirdPlayer.ToString();
-
-            var cardNumbersMyselfPlayer = _match.Players.FirstOrDefault(x => x.Username == "Myself").Cards.Count();
-            lbl_card_number_myself.Text = cardNumbersMyselfPlayer.ToString();
+            // power
+            lbl_power_number_first_player.Text = firstPlayer.Power.ToString();
+            lbl_power_numer_second_player.Text = secondPlayer.Power.ToString();
+            lbl_power_number_third_player.Text = thirdPlayer.Power.ToString();
+            lbl_power_number_myself.Text = _myselfPlayer.Power.ToString();
         }
 
         private void LoadMyselfCardForm()
         {
-            var myself = _match.Players.FirstOrDefault(p => p.Username == "Myself");
-
-            LoadCards(myself.Cards);
+            LoadCards(_myselfPlayer.Cards);
         }
 
         private void LoadCards(List<Card> cards)
@@ -137,7 +142,7 @@ namespace Munchkin.WinFormsApp
 
             if (result == DialogResult.OK)
             {
-                if (card.Type == "Classe")
+                if (card.Type == CardType.Class)
                 {
                     lbl_class_myself.Text = card.Name.ToUpper();
                 }
@@ -161,7 +166,7 @@ namespace Munchkin.WinFormsApp
             this.Controls.Add(_choosenButton);
 
             btn_open_door.Hide();
-            if (_chosenCard.Type == "Monstro")
+            if (_chosenCard.Type == CardType.Monster)
             {
                 btn_attack.Show();
                 btn_help.Show();
@@ -221,7 +226,12 @@ namespace Munchkin.WinFormsApp
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            _backpack.AddNewCard(_chosenCard);
+            _myselfPlayer.Backpack.AddNewCard(_chosenCard);
+
+            //_backpack.AddNewCard(_chosenCard);
+
+            _myselfPlayer.AddPower(_chosenCard.Effect);
+            lbl_power_number_myself.Text = _myselfPlayer.Power.ToString();
 
             var totalCards = int.Parse(lbl_card_number_myself.Text) + 1;
             lbl_card_number_myself.Text = totalCards.ToString();
@@ -245,7 +255,7 @@ namespace Munchkin.WinFormsApp
 
         private void btn_backpack_Click(object sender, EventArgs e)
         {
-            var backpack = new BackpackForm(_backpack);
+            var backpack = new BackpackForm(_myselfPlayer.Backpack);
             backpack.ShowDialog();
         }
 
@@ -293,17 +303,13 @@ namespace Munchkin.WinFormsApp
 
         private void btn_attack_Click(object sender, EventArgs e)
         {
-            if (_clickCard is null || _clickCard.Type != "Monstro")
+            if(_chosenCard is Monster monster)
             {
-                MessageBox.Show("Você deve escolher uma carta do tipo Monstro para poder atacar!");
-            }
-            else
-            {
-                // TODO: Concentrar lógica em um método para ser reutilizável (Lógica repetida)
                 var level = int.Parse(lbl_level_number_myself.Text);
-                if (_clickCard.Power > _chosenCard.Power)
+
+                if (_myselfPlayer.Power > monster.Power)
                 {
-                    MessageBox.Show($"Seu monstro é mais poderoso!! Você subiu um nível");
+                    MessageBox.Show(text: $"Seu monstro é mais poderoso!! Você subiu um nível");
                     level++;
                 }
                 else
@@ -314,10 +320,35 @@ namespace Munchkin.WinFormsApp
                         level--;
                     }
                 }
-
-                lbl_level_number_myself.Text = level.ToString();
-                // adicionar carta a mochila, esconder carta e aparecer com a mochila
             }
+
+            //if (_clickCard is null || _clickCard.Type != CardType.Monster)
+            //{
+            //    MessageBox.Show("Você deve escolher uma carta do tipo Monstro para poder atacar!");
+            //}
+            //else
+            //{
+            //    // TODO: Concentrar lógica em um método para ser reutilizável (Lógica repetida)
+            //    var level = int.Parse(lbl_level_number_myself.Text);
+
+
+            //    if (_clickCard.Power > _chosenCard.Power)
+            //    {
+            //        MessageBox.Show(text: $"Seu monstro é mais poderoso!! Você subiu um nível");
+            //        level++;
+            //    }
+            //    else
+            //    {
+            //        if (level != 1)
+            //        {
+            //            MessageBox.Show($"Seu monstro perdeu!! Você desceu um nível");
+            //            level--;
+            //        }
+            //    }
+
+            //    lbl_level_number_myself.Text = level.ToString();
+            //    // adicionar carta a mochila, esconder carta e aparecer com a mochila
+            //}
         }
 
         private void HideMonsterButtons()

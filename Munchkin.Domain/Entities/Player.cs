@@ -4,33 +4,42 @@ namespace Munchkin.Domain.Entities
 {
     public class Player
     {
-        public Player(string username, string type)
+        public Player(string username)
         {
             Username = username;
-            Type = type;
             Level = 1;
             Cards = new List<Card>();
-        }
-
-        public static List<Player> CreatePlayers()
-        {
-            return new List<Player>()
-            {
-                new Player("Myself",""),
-                new Player("Player1",""),
-                new Player("Player2",""),
-                new Player("Player3","")
-            };
+            Backpack = new Backpack();
         }
 
         public string Username { get; private set; }
-        public string Type { get; private set; }
         public int Level { get; private set; }
         public List<Card> Cards { get; private set; }
-
+        public int Power { get; private set; }
+        public Backpack Backpack { get; private set; }
+        
         public void AddCard(Card card)
         {
             Cards.Add(card);
         }
+
+        public void SetPower()
+        {
+            int totalPower = 0;
+
+            foreach (var card in Cards)
+            {
+                totalPower += card.Effect;
+            }
+
+            Power = totalPower; ;
+        }
+
+        public void AddPower(int power)
+        {
+            Power += power;
+        }
+
+
     }
 }

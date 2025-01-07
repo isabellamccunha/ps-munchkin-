@@ -3,10 +3,10 @@ using Munchkin.Domain.Shared.Abstractions;
 
 namespace Munchkin.Domain.Entities.Cards
 {
-    public class Class : Card
+    public class Item : Card
     {
-        public Class(string name, int effect) 
-            :base(name, effect, CardType.Class) 
+        public Item(string name, int effect) 
+            : base(name, effect, CardType.Item)
         {
         }
     }

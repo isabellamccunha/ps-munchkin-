@@ -1,4 +1,5 @@
 ﻿using Munchkin.Domain.Shared.Abstractions;
+using Munchkin.Domain.Utils;
 
 namespace Munchkin.WinFormsApp.Utils
 {
@@ -16,30 +17,30 @@ namespace Munchkin.WinFormsApp.Utils
                 Text = card.Name,
                 TextAlign = ContentAlignment.MiddleCenter,
                 Font = new Font("Perpetua", 8, FontStyle.Bold),
-                FlatStyle = FlatStyle.Flat
+                FlatStyle = FlatStyle.Flat             
             };
 
-            var titleLabel = CreateTitleCard(card.Type);
+            var typeLabel = CreatTypeCard(card.Type.ToDescription());
+            var effectLabel = CreateEffectCard(card.Effect);
 
-            var powerLabel = CreatePowerCard(card.Power);
+            //var rewardLabel = CreateRewardCard(card.Reward);
 
-            var rewardLabel = CreateRewardCard(card.Reward);
+            //var damageLabel = CreateDemageCard(card.Damage);
 
-            var damageLabel = CreateDemageCard(card.Damage);
+            button.Controls.Add(typeLabel);
+            button.Controls.Add(effectLabel);
             
-            button.Controls.Add(titleLabel);
-            button.Controls.Add(powerLabel);
-            button.Controls.Add(rewardLabel);
-            button.Controls.Add(damageLabel);
+            //button.Controls.Add(rewardLabel);
+            //button.Controls.Add(damageLabel);
            
             return button;
         }
 
-        private static Label CreateTitleCard(string cardType)
+        private static Label CreatTypeCard(string type)
         {
             return new Label
             {
-                Text = cardType,
+                Text = type,
                 TextAlign = ContentAlignment.TopCenter,
                 Font = new Font("Perpetua", 8, FontStyle.Bold),
                 ForeColor = Color.DarkGoldenrod,
@@ -49,44 +50,44 @@ namespace Munchkin.WinFormsApp.Utils
             };
         }
 
-        private static Label CreatePowerCard(int power)
+        private static Label CreateEffectCard(int power)
         {
             return new Label
             {
-                Text = $"PODER: {power}",
-                Font = new Font("Perpetua", 8, FontStyle.Bold),
+                Text = $"{power}",
+                Font = new Font("Perpetua", 11, FontStyle.Bold),
                 ForeColor = Color.White,
-                Location = new Point(10, 85),
+                Location = new Point(25, 90),
                 AutoSize = true,
                 BackColor = Color.Chocolate
             };
         }
 
-        private static Label CreateRewardCard(int reward)
-        {
-            return new Label
-            {
-                Text = $"RECOMP: {reward}",               
-                Font = new Font("Perpetua", 8, FontStyle.Bold),
-                ForeColor = Color.White,
-                Location = new Point(10, 100),
-                AutoSize = true,
-                BackColor = Color.Chocolate
-            };
-        }
+        //private static Label CreateRewardCard(int reward)
+        //{
+        //    return new Label
+        //    {
+        //        Text = $"RECOMP: {reward}",               
+        //        Font = new Font("Perpetua", 8, FontStyle.Bold),
+        //        ForeColor = Color.White,
+        //        Location = new Point(10, 100),
+        //        AutoSize = true,
+        //        BackColor = Color.Chocolate
+        //    };
+        //}
 
-        private static Label CreateDemageCard(int demage)
-        {
-            return new Label
-            {
-                Text = $"DANO: {demage}",
-                Font = new Font("Perpetua", 8, FontStyle.Bold),
-                ForeColor = Color.White,
-                Location = new Point(10, 115),
-                AutoSize = true,
-                BackColor = Color.Chocolate
-            };
-        }
+        //private static Label CreateDemageCard(int demage)
+        //{
+        //    return new Label
+        //    {
+        //        Text = $"DANO: {demage}",
+        //        Font = new Font("Perpetua", 8, FontStyle.Bold),
+        //        ForeColor = Color.White,
+        //        Location = new Point(10, 115),
+        //        AutoSize = true,
+        //        BackColor = Color.Chocolate
+        //    };
+        //}
 
     }
 }
