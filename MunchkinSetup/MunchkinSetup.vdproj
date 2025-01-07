@@ -15,13 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_5937DD2D5B0F41BAAE26E53055AE4C79"
+        "MsmKey" = "8:_10EAA84FCDE14C8ABC5C6AFD68A4519E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_B8CE28391E3C460EBFE4730A0618F2F2"
+        "MsmKey" = "8:_5937DD2D5B0F41BAAE26E53055AE4C79"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -319,7 +319,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6CD7C774EC6B44848B214B8ED05DD444"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EDF75491BE9840218CD1B462B1CAE5F0"
             {
             "Name" = "8:Munchkin"
             "Arguments" = "8:"
@@ -327,10 +327,10 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B8CE28391E3C460EBFE4730A0618F2F2"
+            "Target" = "8:_10EAA84FCDE14C8ABC5C6AFD68A4519E"
             "Folder" = "8:_F4BBC67A22FC4A9E8250F842DB23646D"
             "WorkingFolder" = "8:_B65D27B1871747E0997F0D6463CD2FDC"
-            "Icon" = "8:_5937DD2D5B0F41BAAE26E53055AE4C79"
+            "Icon" = "8:"
             "Feature" = "8:"
             }
         }
@@ -732,7 +732,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B8CE28391E3C460EBFE4730A0618F2F2"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_10EAA84FCDE14C8ABC5C6AFD68A4519E"
             {
             "SourcePath" = "8:..\\Munchkin.WinFormsApp\\obj\\Debug\\net8.0-windows\\apphost.exe"
             "TargetName" = "8:"

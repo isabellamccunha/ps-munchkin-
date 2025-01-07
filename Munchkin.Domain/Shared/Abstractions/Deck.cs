@@ -10,7 +10,7 @@ namespace Munchkin.Domain.Shared.Abstractions
 
         public List<Card> Cards { get; private set; }
 
-        public Card ChooseCard()
+        public virtual Card ChooseCard()
         {
             Random random = new Random();
 

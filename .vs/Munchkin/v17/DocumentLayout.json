@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Faculdade\\Munchkin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DA76013-C430-4C98-BBFC-98BD78B25C04}|Munchkin.ApplicationService\\Munchkin.ApplicationService.csproj|c:\\faculdade\\munchkin\\munchkin.applicationservice\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA76013-C430-4C98-BBFC-98BD78B25C04}|Munchkin.ApplicationService\\Munchkin.ApplicationService.csproj|solutionrelative:munchkin.applicationservice\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\factory\\deckfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,48 +23,12 @@
       "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\shared\\abstractions\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\shared\\abstractions\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\decks\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\decks\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|C:\\Faculdade\\Munchkin\\munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\matchform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\backpack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\backpack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|C:\\Faculdade\\Munchkin\\munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\utils\\buttoncreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\utils\\buttoncreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\enums\\cardtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\enums\\cardtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DA76013-C430-4C98-BBFC-98BD78B25C04}|Munchkin.ApplicationService\\Munchkin.ApplicationService.csproj|c:\\faculdade\\munchkin\\munchkin.applicationservice\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA76013-C430-4C98-BBFC-98BD78B25C04}|Munchkin.ApplicationService\\Munchkin.ApplicationService.csproj|solutionrelative:munchkin.applicationservice\\gameapplicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\shared\\abstractions\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\shared\\abstractions\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\factory\\cardfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,56 +39,36 @@
       "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\factory\\randomcardfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\factory\\playerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\factory\\playerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\curse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\curse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\gold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\gold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\decks\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\decks\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\cards\\race.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\cards\\race.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\shared\\abstractions\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\shared\\abstractions\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\munchkin.winformsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\munchkin.winformsapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\decks\\treasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\decks\\treasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\utils\\enumextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\utils\\enumextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\utils\\randomnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\utils\\randomnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|C:\\Faculdade\\Munchkin\\munchkin.winformsapp\\backpackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\backpackform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|c:\\faculdade\\munchkin\\munchkin.winformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D897326A-BFAA-427B-8AE1-053E9C9D2177}|Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj|solutionrelative:munchkin.winformsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\backpack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\backpack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|c:\\faculdade\\munchkin\\munchkin.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0C35B-AA28-4E58-82D8-0C61B3682BE9}|Munchkin.Domain\\Munchkin.Domain.csproj|solutionrelative:munchkin.domain\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,360 +78,226 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MatchForm.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAkwJsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T22:14:48.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Player.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Player.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Player.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T22:08:29.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Backpack.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Backpack.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Backpack.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Backpack.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Backpack.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:01:34.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Deck.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T00:49:42.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Door.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Decks\\Door.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Decks\\Door.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Decks\\Door.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Decks\\Door.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T00:50:30.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeckFactory.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\DeckFactory.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Factory\\DeckFactory.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\DeckFactory.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Factory\\DeckFactory.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAswEkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T02:50:46.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Match.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Match.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Match.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T21:45:38.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameApplicationService.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.ApplicationService\\GameApplicationService.cs",
-              "RelativeDocumentMoniker": "Munchkin.ApplicationService\\GameApplicationService.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.ApplicationService\\GameApplicationService.cs",
-              "RelativeToolTip": "Munchkin.ApplicationService\\GameApplicationService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T22:13:31.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MatchForm.cs [Design]",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs [Design]",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T21:48:45.004Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MainForm.cs",
               "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MainForm.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MainForm.cs [Design]",
               "RelativeToolTip": "Munchkin.WinFormsApp\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T20:01:33.182Z"
+              "WhenOpened": "2025-01-07T17:02:42.41Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CardType.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Enums\\CardType.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Enums\\CardType.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Enums\\CardType.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Enums\\CardType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T00:26:04.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ButtonCreator.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\Utils\\ButtonCreator.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAwwEsAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T03:25:45.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Item.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Item.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Item.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Item.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:50:39.641Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Level.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Level.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Level.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Level.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Level.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T02:17:49.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Shared\\Abstractions\\Card.cs",
               "RelativeDocumentMoniker": "Munchkin.Domain\\Shared\\Abstractions\\Card.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Shared\\Abstractions\\Card.cs",
               "RelativeToolTip": "Munchkin.Domain\\Shared\\Abstractions\\Card.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:04:08.57Z"
+              "WhenOpened": "2025-01-07T16:48:20.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Monster.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Monster.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAASAAAA",
+              "DocumentIndex": 0,
+              "Title": "MatchForm.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
+              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
+              "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.cs",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAkwAoBAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:20:51.873Z"
+              "WhenOpened": "2025-01-07T16:18:02.293Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
+              "Title": "GameApplicationService.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.ApplicationService\\GameApplicationService.cs",
+              "RelativeDocumentMoniker": "Munchkin.ApplicationService\\GameApplicationService.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.ApplicationService\\GameApplicationService.cs",
+              "RelativeToolTip": "Munchkin.ApplicationService\\GameApplicationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:50:00.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MatchForm.cs [Design]",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs",
+              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\MatchForm.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\MatchForm.cs [Design]",
+              "RelativeToolTip": "Munchkin.WinFormsApp\\MatchForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:46:52.891Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Match.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Match.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Entities\\Match.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwDQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T16:11:12.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeckFactory.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\DeckFactory.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Factory\\DeckFactory.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\DeckFactory.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Factory\\DeckFactory.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAkwDQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T16:33:26.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CardFactory.cs",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\CardFactory.cs",
               "RelativeDocumentMoniker": "Munchkin.Domain\\Factory\\CardFactory.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\CardFactory.cs",
               "RelativeToolTip": "Munchkin.Domain\\Factory\\CardFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:56:56.169Z"
+              "WhenOpened": "2025-01-07T16:39:34.132Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
+              "Title": "Turn.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Turn.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Turn.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Turn.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Entities\\Turn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T16:04:44.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Door.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Decks\\Door.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Decks\\Door.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Decks\\Door.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Entities\\Decks\\Door.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T16:18:31.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Item.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Item.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Item.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T16:39:27.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RandomCardFactory.cs",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\RandomCardFactory.cs",
               "RelativeDocumentMoniker": "Munchkin.Domain\\Factory\\RandomCardFactory.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\RandomCardFactory.cs",
               "RelativeToolTip": "Munchkin.Domain\\Factory\\RandomCardFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAA6AAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwEAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:21:45.037Z"
+              "WhenOpened": "2025-01-07T16:39:40.883Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PlayerFactory.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\PlayerFactory.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Factory\\PlayerFactory.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Factory\\PlayerFactory.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Factory\\PlayerFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T03:03:18.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Gold.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Gold.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Gold.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Gold.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Gold.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:47:34.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Class.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Class.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Class.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Class.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Class.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T22:10:50.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Curse.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Curse.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Curse.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Curse.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Curse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T22:10:54.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Race.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Race.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Cards\\Race.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Cards\\Race.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Entities\\Cards\\Race.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T01:34:06.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Munchkin.WinFormsApp.csproj",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\Munchkin.WinFormsApp.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-07T03:27:21.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 13,
               "Title": "Treasure.cs",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Decks\\Treasure.cs",
               "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Decks\\Treasure.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Decks\\Treasure.cs",
               "RelativeToolTip": "Munchkin.Domain\\Entities\\Decks\\Treasure.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T00:51:26.437Z"
+              "WhenOpened": "2025-01-07T16:18:51.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "EnumExtensions.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Utils\\EnumExtensions.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Utils\\EnumExtensions.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Utils\\EnumExtensions.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Utils\\EnumExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
+              "DocumentIndex": 11,
+              "Title": "Deck.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Shared\\Abstractions\\Deck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T02:15:01.726Z"
+              "WhenOpened": "2025-01-07T16:14:02.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RandomNumberGenerator.cs",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Utils\\RandomNumberGenerator.cs",
-              "RelativeDocumentMoniker": "Munchkin.Domain\\Utils\\RandomNumberGenerator.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Utils\\RandomNumberGenerator.cs",
-              "RelativeToolTip": "Munchkin.Domain\\Utils\\RandomNumberGenerator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T00:46:04.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "BackpackForm.cs [Design]",
-              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\BackpackForm.cs",
-              "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\BackpackForm.cs",
-              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\BackpackForm.cs [Design]",
-              "RelativeToolTip": "Munchkin.WinFormsApp\\BackpackForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T00:28:00.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Program.cs",
               "RelativeDocumentMoniker": "Munchkin.WinFormsApp\\Program.cs",
               "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.WinFormsApp\\Program.cs",
               "RelativeToolTip": "Munchkin.WinFormsApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T20:01:36.27Z"
+              "WhenOpened": "2025-01-07T16:04:52.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Backpack.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Backpack.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Backpack.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Backpack.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Entities\\Backpack.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:56:33.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Player.cs",
+              "RelativeDocumentMoniker": "Munchkin.Domain\\Entities\\Player.cs",
+              "ToolTip": "C:\\Faculdade\\Munchkin\\Munchkin.Domain\\Entities\\Player.cs",
+              "RelativeToolTip": "Munchkin.Domain\\Entities\\Player.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAkwCgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:51:13.383Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -16,7 +16,7 @@ namespace Munchkin.ApplicationService
 
         public Match InitializeGame()
         {            
-            var match = new Match(_playerFactory.CreatePlayers());
+            var match =  Match.GetInstance(_playerFactory.CreatePlayers());
 
             match.Initialize(_deckFactory.CreateDoorDeck());
             match.Initialize(_deckFactory.CreateTreasureDeck());

@@ -9,5 +9,14 @@ namespace Munchkin.Domain.Entities.Decks
         {
 
         }
+
+        public override Card ChooseCard()
+        {
+            Random random = new Random();
+
+            int randomIndex = random.Next(Cards.Count);
+
+            return Cards[randomIndex];
+        }
     }
 }

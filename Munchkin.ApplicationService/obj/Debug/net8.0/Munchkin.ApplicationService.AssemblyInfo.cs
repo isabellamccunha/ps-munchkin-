@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Munchkin.ApplicationService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32a4c78426050c2e7d11d0b90ae90f1caeed6ad5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32359b33b129f83b804b03c7e595635bc20dbabc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Munchkin.ApplicationService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Munchkin.ApplicationService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchForm));
             gb_first_player = new GroupBox();
+            lbl_power_number_first_player = new Label();
+            lbl_power_first_player = new Label();
             img_first_player = new PictureBox();
             lbl_card_first_player = new Label();
             lbl_level_first_player = new Label();
@@ -40,6 +42,8 @@
             btn_help = new Button();
             btn_escape = new Button();
             gb_second_player = new GroupBox();
+            lbl_power_numer_second_player = new Label();
+            lbl_power_second_player = new Label();
             img_second_player = new PictureBox();
             lbl_card_second_player = new Label();
             lbl_card_number_second_player = new Label();
@@ -47,6 +51,8 @@
             lbl_level_number_second_player = new Label();
             lbl_class_second_player = new Label();
             gb_third_player = new GroupBox();
+            lbl_power_number_third_player = new Label();
+            lbl_power_third_player = new Label();
             lbl_card_third_player = new Label();
             lbl_card_number_third_player = new Label();
             lbl_level_third_player = new Label();
@@ -54,6 +60,8 @@
             lbl_class_third_player = new Label();
             img_third_player = new PictureBox();
             gb_myself = new GroupBox();
+            lbl_power_number_myself = new Label();
+            lbl_myself_power = new Label();
             lbl_card_myself = new Label();
             lbl_card_number_myself = new Label();
             lbl_level_myself = new Label();
@@ -69,14 +77,8 @@
             btn_dice = new Button();
             lbl_dice = new Label();
             btn_back = new Button();
-            lbl_power_first_player = new Label();
-            lbl_power_number_first_player = new Label();
-            lbl_power_second_player = new Label();
-            lbl_power_numer_second_player = new Label();
-            lbl_power_third_player = new Label();
-            lbl_power_number_third_player = new Label();
-            lbl_myself_power = new Label();
-            lbl_power_number_myself = new Label();
+            lbl_phase = new Label();
+            lbl_phase_number = new Label();
             gb_first_player.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)img_first_player).BeginInit();
             gb_second_player.SuspendLayout();
@@ -102,6 +104,26 @@
             gb_first_player.Size = new Size(197, 121);
             gb_first_player.TabIndex = 0;
             gb_first_player.TabStop = false;
+            // 
+            // lbl_power_number_first_player
+            // 
+            lbl_power_number_first_player.AutoSize = true;
+            lbl_power_number_first_player.ForeColor = SystemColors.ControlLightLight;
+            lbl_power_number_first_player.Location = new Point(167, 96);
+            lbl_power_number_first_player.Name = "lbl_power_number_first_player";
+            lbl_power_number_first_player.Size = new Size(14, 15);
+            lbl_power_number_first_player.TabIndex = 8;
+            lbl_power_number_first_player.Text = "0";
+            // 
+            // lbl_power_first_player
+            // 
+            lbl_power_first_player.AutoSize = true;
+            lbl_power_first_player.ForeColor = SystemColors.ControlLightLight;
+            lbl_power_first_player.Location = new Point(116, 96);
+            lbl_power_first_player.Name = "lbl_power_first_player";
+            lbl_power_first_player.Size = new Size(49, 15);
+            lbl_power_first_player.TabIndex = 7;
+            lbl_power_first_player.Text = "PODER:";
             // 
             // img_first_player
             // 
@@ -223,6 +245,26 @@
             gb_second_player.TabIndex = 4;
             gb_second_player.TabStop = false;
             // 
+            // lbl_power_numer_second_player
+            // 
+            lbl_power_numer_second_player.AutoSize = true;
+            lbl_power_numer_second_player.ForeColor = SystemColors.ControlLightLight;
+            lbl_power_numer_second_player.Location = new Point(167, 95);
+            lbl_power_numer_second_player.Name = "lbl_power_numer_second_player";
+            lbl_power_numer_second_player.Size = new Size(14, 15);
+            lbl_power_numer_second_player.TabIndex = 8;
+            lbl_power_numer_second_player.Text = "0";
+            // 
+            // lbl_power_second_player
+            // 
+            lbl_power_second_player.AutoSize = true;
+            lbl_power_second_player.ForeColor = SystemColors.ControlLightLight;
+            lbl_power_second_player.Location = new Point(114, 95);
+            lbl_power_second_player.Name = "lbl_power_second_player";
+            lbl_power_second_player.Size = new Size(49, 15);
+            lbl_power_second_player.TabIndex = 7;
+            lbl_power_second_player.Text = "PODER:";
+            // 
             // img_second_player
             // 
             img_second_player.Image = Properties.Resources.Captura_de_tela_2025_01_03_172419;
@@ -306,6 +348,26 @@
             gb_third_player.TabIndex = 5;
             gb_third_player.TabStop = false;
             // 
+            // lbl_power_number_third_player
+            // 
+            lbl_power_number_third_player.AutoSize = true;
+            lbl_power_number_third_player.ForeColor = SystemColors.ControlLightLight;
+            lbl_power_number_third_player.Location = new Point(169, 96);
+            lbl_power_number_third_player.Name = "lbl_power_number_third_player";
+            lbl_power_number_third_player.Size = new Size(14, 15);
+            lbl_power_number_third_player.TabIndex = 15;
+            lbl_power_number_third_player.Text = "0";
+            // 
+            // lbl_power_third_player
+            // 
+            lbl_power_third_player.AutoSize = true;
+            lbl_power_third_player.ForeColor = SystemColors.ControlLightLight;
+            lbl_power_third_player.Location = new Point(117, 96);
+            lbl_power_third_player.Name = "lbl_power_third_player";
+            lbl_power_third_player.Size = new Size(49, 15);
+            lbl_power_third_player.TabIndex = 14;
+            lbl_power_third_player.Text = "PODER:";
+            // 
             // lbl_card_third_player
             // 
             lbl_card_third_player.AutoSize = true;
@@ -388,6 +450,26 @@
             gb_myself.Size = new Size(200, 126);
             gb_myself.TabIndex = 7;
             gb_myself.TabStop = false;
+            // 
+            // lbl_power_number_myself
+            // 
+            lbl_power_number_myself.AutoSize = true;
+            lbl_power_number_myself.ForeColor = SystemColors.ControlLightLight;
+            lbl_power_number_myself.Location = new Point(167, 100);
+            lbl_power_number_myself.Name = "lbl_power_number_myself";
+            lbl_power_number_myself.Size = new Size(14, 15);
+            lbl_power_number_myself.TabIndex = 17;
+            lbl_power_number_myself.Text = "0";
+            // 
+            // lbl_myself_power
+            // 
+            lbl_myself_power.AutoSize = true;
+            lbl_myself_power.ForeColor = SystemColors.ControlLightLight;
+            lbl_myself_power.Location = new Point(116, 101);
+            lbl_myself_power.Name = "lbl_myself_power";
+            lbl_myself_power.Size = new Size(49, 15);
+            lbl_myself_power.TabIndex = 16;
+            lbl_myself_power.Text = "PODER:";
             // 
             // lbl_card_myself
             // 
@@ -559,85 +641,27 @@
             btn_back.UseVisualStyleBackColor = false;
             btn_back.Click += btn_back_Click_1;
             // 
-            // lbl_power_first_player
+            // lbl_phase
             // 
-            lbl_power_first_player.AutoSize = true;
-            lbl_power_first_player.ForeColor = SystemColors.ControlLightLight;
-            lbl_power_first_player.Location = new Point(116, 96);
-            lbl_power_first_player.Name = "lbl_power_first_player";
-            lbl_power_first_player.Size = new Size(49, 15);
-            lbl_power_first_player.TabIndex = 7;
-            lbl_power_first_player.Text = "PODER:";
+            lbl_phase.AutoSize = true;
+            lbl_phase.Font = new Font("Papyrus", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_phase.ForeColor = SystemColors.ControlLightLight;
+            lbl_phase.Location = new Point(20, 202);
+            lbl_phase.Name = "lbl_phase";
+            lbl_phase.Size = new Size(47, 19);
+            lbl_phase.TabIndex = 37;
+            lbl_phase.Text = "Fase:";
             // 
-            // lbl_power_number_first_player
+            // lbl_phase_number
             // 
-            lbl_power_number_first_player.AutoSize = true;
-            lbl_power_number_first_player.ForeColor = SystemColors.ControlLightLight;
-            lbl_power_number_first_player.Location = new Point(167, 96);
-            lbl_power_number_first_player.Name = "lbl_power_number_first_player";
-            lbl_power_number_first_player.Size = new Size(14, 15);
-            lbl_power_number_first_player.TabIndex = 8;
-            lbl_power_number_first_player.Text = "0";
-            // 
-            // lbl_power_second_player
-            // 
-            lbl_power_second_player.AutoSize = true;
-            lbl_power_second_player.ForeColor = SystemColors.ControlLightLight;
-            lbl_power_second_player.Location = new Point(114, 95);
-            lbl_power_second_player.Name = "lbl_power_second_player";
-            lbl_power_second_player.Size = new Size(49, 15);
-            lbl_power_second_player.TabIndex = 7;
-            lbl_power_second_player.Text = "PODER:";
-            // 
-            // lbl_power_numer_second_player
-            // 
-            lbl_power_numer_second_player.AutoSize = true;
-            lbl_power_numer_second_player.ForeColor = SystemColors.ControlLightLight;
-            lbl_power_numer_second_player.Location = new Point(167, 95);
-            lbl_power_numer_second_player.Name = "lbl_power_numer_second_player";
-            lbl_power_numer_second_player.Size = new Size(14, 15);
-            lbl_power_numer_second_player.TabIndex = 8;
-            lbl_power_numer_second_player.Text = "0";
-            // 
-            // lbl_power_third_player
-            // 
-            lbl_power_third_player.AutoSize = true;
-            lbl_power_third_player.ForeColor = SystemColors.ControlLightLight;
-            lbl_power_third_player.Location = new Point(117, 96);
-            lbl_power_third_player.Name = "lbl_power_third_player";
-            lbl_power_third_player.Size = new Size(49, 15);
-            lbl_power_third_player.TabIndex = 14;
-            lbl_power_third_player.Text = "PODER:";
-            // 
-            // lbl_power_number_third_player
-            // 
-            lbl_power_number_third_player.AutoSize = true;
-            lbl_power_number_third_player.ForeColor = SystemColors.ControlLightLight;
-            lbl_power_number_third_player.Location = new Point(169, 96);
-            lbl_power_number_third_player.Name = "lbl_power_number_third_player";
-            lbl_power_number_third_player.Size = new Size(14, 15);
-            lbl_power_number_third_player.TabIndex = 15;
-            lbl_power_number_third_player.Text = "0";
-            // 
-            // lbl_myself_power
-            // 
-            lbl_myself_power.AutoSize = true;
-            lbl_myself_power.ForeColor = SystemColors.ControlLightLight;
-            lbl_myself_power.Location = new Point(116, 101);
-            lbl_myself_power.Name = "lbl_myself_power";
-            lbl_myself_power.Size = new Size(49, 15);
-            lbl_myself_power.TabIndex = 16;
-            lbl_myself_power.Text = "PODER:";
-            // 
-            // lbl_power_number_myself
-            // 
-            lbl_power_number_myself.AutoSize = true;
-            lbl_power_number_myself.ForeColor = SystemColors.ControlLightLight;
-            lbl_power_number_myself.Location = new Point(167, 100);
-            lbl_power_number_myself.Name = "lbl_power_number_myself";
-            lbl_power_number_myself.Size = new Size(14, 15);
-            lbl_power_number_myself.TabIndex = 17;
-            lbl_power_number_myself.Text = "0";
+            lbl_phase_number.AutoSize = true;
+            lbl_phase_number.Font = new Font("Papyrus", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_phase_number.ForeColor = SystemColors.ControlLightLight;
+            lbl_phase_number.Location = new Point(62, 199);
+            lbl_phase_number.Name = "lbl_phase_number";
+            lbl_phase_number.Size = new Size(22, 25);
+            lbl_phase_number.TabIndex = 38;
+            lbl_phase_number.Text = "1";
             // 
             // MatchForm
             // 
@@ -645,6 +669,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(901, 467);
+            Controls.Add(lbl_phase_number);
+            Controls.Add(lbl_phase);
             Controls.Add(btn_back);
             Controls.Add(lbl_dice);
             Controls.Add(btn_dice);
@@ -732,5 +758,7 @@
         private Label lbl_power_third_player;
         private Label lbl_power_number_myself;
         private Label lbl_myself_power;
+        private Label lbl_phase;
+        private Label lbl_phase_number;
     }
 }

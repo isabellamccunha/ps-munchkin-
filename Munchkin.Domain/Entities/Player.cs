@@ -29,7 +29,10 @@ namespace Munchkin.Domain.Entities
 
             foreach (var card in Cards)
             {
-                totalPower += card.Effect;
+                if(card.Type != Enums.CardType.Monster)
+                {
+                    totalPower += card.Effect;
+                }
             }
 
             Power = totalPower; ;
@@ -39,7 +42,5 @@ namespace Munchkin.Domain.Entities
         {
             Power += power;
         }
-
-
     }
 }

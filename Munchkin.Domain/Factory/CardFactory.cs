@@ -1,5 +1,4 @@
 ﻿using Munchkin.Domain.Entities.Cards;
-using Munchkin.Domain.Shared.Abstractions;
 
 namespace Munchkin.Domain.Factory
 {

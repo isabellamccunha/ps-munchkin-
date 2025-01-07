@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             btn_bot = new Button();
-            btn_amigos = new Button();
             btn_sound = new Button();
             SuspendLayout();
             // 
@@ -39,25 +38,13 @@
             btn_bot.BackColor = Color.SaddleBrown;
             btn_bot.Font = new Font("Berlin Sans FB", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_bot.ForeColor = SystemColors.ControlLightLight;
-            btn_bot.Location = new Point(287, 290);
+            btn_bot.Location = new Point(287, 327);
             btn_bot.Name = "btn_bot";
             btn_bot.Size = new Size(122, 40);
             btn_bot.TabIndex = 0;
-            btn_bot.Text = "JOGUE vs BOT";
+            btn_bot.Text = "PLAY";
             btn_bot.UseVisualStyleBackColor = false;
             btn_bot.Click += btn_bot_Click;
-            // 
-            // btn_amigos
-            // 
-            btn_amigos.BackColor = Color.FromArgb(128, 64, 0);
-            btn_amigos.Font = new Font("Berlin Sans FB", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_amigos.ForeColor = SystemColors.ControlLightLight;
-            btn_amigos.Location = new Point(287, 336);
-            btn_amigos.Name = "btn_amigos";
-            btn_amigos.Size = new Size(122, 40);
-            btn_amigos.TabIndex = 1;
-            btn_amigos.Text = "JOGUE vs AMIGOS";
-            btn_amigos.UseVisualStyleBackColor = false;
             // 
             // btn_sound
             // 
@@ -79,7 +66,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(688, 391);
             Controls.Add(btn_sound);
-            Controls.Add(btn_amigos);
             Controls.Add(btn_bot);
             Cursor = Cursors.Hand;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -93,7 +79,6 @@
 
         private Button btn_start;
         private Button btn_bot;
-        private Button btn_amigos;
         private Button btn_sound;
     }
 }
